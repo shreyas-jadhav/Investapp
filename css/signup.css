@@ -26,39 +26,33 @@ a {
     color: #D79A10;
 }
 
-.item {
-    color: #D79A10;
-}
-
-/*Begining Login view Style*/
-.terms {
-    color: #D79A10;
-}
-
-#login-form {
-    margin: 10%;
-    margin-top: 20%;
-}
-
-#login-form #login-text {
-    margin-top: 50px;
-
-}
-
-
-#bottom-list a {
-    display: inline-block;
-    padding: 10px;
-    color: #a8a5a5;
-    margin-top: 90px;
-}
-
-#submit {
+#submit2 {
     border-radius: 50px;
     font-size: larger;
     background-color: #D79A10;
 }
 
-#submit{
-    color:#FFFFFF;
+#login-form2 {
+    margin: 10%;
+    margin-top: 16%;
 }
+
+#login-form2 #login-text2 {
+    margin-top: 50px;
+}
+
+#bottom-list2 a {
+    display: inline-block;
+    padding: 10px;
+    color: #a8a5a5;
+}
+
+#bottom-list2 {
+    margin-top: -40px;
+}
+
+.buble {
+    animation: vertical 5s infinite linear reverse;
+}
+
+/*End sign up view*/
