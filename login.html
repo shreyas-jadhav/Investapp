@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Jura&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Connexion | InvestApp</title>
+</head>
+<body>
+    <header>
+        <div class="ui grid" style="margin-top:10px; margin-left: 10px">
+            <h2>Investapp</h2>
+        </div>
+    </header>
+    <section id = "login-form" class = "ui grid container">        
+        <!--Section of login form-->
+         <div class = "three column row">
+            <div class="left floated column" id = "login-text">
+                <h2 style="font-weight: Bolder;">Connectez-vous</h2>
+                <h3 style="font-weight: lighter;">Bienvenue! C'est toujours un immense plaisir de vous compter parmi nos milliers d'abonnés</h3>
+            </div>
+            <div class="right floated column">
+                <form id="form-box" class="ui form" method="" action="">
+                    <div class="ui labeled fluid input field">
+                        <div class ="ui label" style = "background-color:#D79A10">
+                            <i class ="ui standard at icon" style="color :#FFFFFF""></i>
+                        </div>
+                        <input type="email" name="e-mail" placeholder="E-mail">
+                    </div>
+                    <div class="ui labeled fluid input field">
+                       <div class = "ui label" style = "background-color:#D79A10">
+                            <i class = "ui standard lock icon" style="color :#FFFFFF""></i>
+                       </div>
+                        <input type="password" name="passwd" placeholder="Mot de passe">
+                    </div>
+                    <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name = "terms" tabindex="0">
+                            <label class ="terms" style ="color: #FFFFFF; font-size: 12px;">J'accepte les termes et conditions | <a href="#">Mot de passe oublié ?</a></label>                            
+                        </div>
+                    </div>
+                    <button class="ui fluid button" type="submit" id = "submit">Se connecter</button>
+                    <label style ="color: #FFFFFF; font-size: 12px;">Voulez-vous nous rejoindre ? <a href="signup.html">Inscrivez-vous ici</a></label>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="ui grid container">                            
+        <div id="bottom-list" class="ui link list">
+            <span>Investapp <i class="ui copyright outline icon"></i>2022</span>
+            <a class="item">A propos</a>
+            <a class = "item" href="#">Mentions légales</a>
+            <a class="item">Confidentialité</a>
+            <a class="item">Conditions générales d'utilisation</a>
+            <a class="item">Politique relative aux cookies</a>
+           <!-- <a class="item">Sign up</a>>-->
+            <a class="item">Sign up</a>
+            <div class="ui mini floating dropdown labeled search icon button">
+                <i class="world icon"onclick="$('.ui.dropdown').dropdown();"></i>
+                <span onclick="$('.ui.dropdown').dropdown();" class="text">Select Language</span>
+                <div class="menu">
+                    <div class="item">French</div>
+                    <div class="item">English</div>
+                 </div>
+            </div>
+        </div>        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>   
+</body>
+</html>
