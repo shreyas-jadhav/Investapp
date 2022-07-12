@@ -4,16 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Jura&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Home | InvestApp</title>
+    <title>Fil d'actualité | InvestApp</title>
 </head>
 <body>
-    <header>
-        <div class="ui grid" style="margin-top:10px; margin-left: 10px">
-            <h2>Investapp</h2>
+    <!--Main navigation bar-->
+    <div class = "ui stackable four column grid"  style="background-color: rgb(236, 236, 236, .2); margin: auto;">
+            <div class="column" style="margin: auto;">
+                <div class="ui icon input"> 
+                    <h2 style="font-family:Quicksand; margin:auto; margin-right:10px;"><a href="#" style="color:#D79A10">InvestApp </a></h2> 
+                    <input type="text" placeholder="Search..." style="border:1px solid inherit; border-radius: 50px; width: 350px;">
+                    <i class="search icon"></i>
+                </div>
+            </div>
+        <div class = "column" style="margin: auto;">                                
+                <a class="notification" href=""><i class="icon ion-md-notifications" style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>
+                <a class="profile" href=""><i class="icon ion-md-person" style="font-size: 25px; position: relative; top:5px;"></i></a>
+                <a class="events" href=""><i class="icon ion-md-calendar" style="font-size: 25px; position: relative; top:5px;"></i></a> |                 
+                <a href="#"> <code class="privilege" style="font-family: Quicksand; font-weight: bolder;" >Move to Premium <i class="icon ion-md-medal"></i></code></a>
+        </div>  
+    </div><br><br>
+
+    <!--Begining of timeline content-->
+   <div class="ui container">
+    <section class="ui stackable three column grid">
+        <!--Left side timeline section-->
+        <div class="three wide sticky column">
+            Gauche
         </div>
-    </header>
+        <!--Timeline-->
+        <div class="nine wide column">
+            <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2) ;">
+                <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">
+                    <div class="ui label" style="background-color:inherit; ">
+                        <img src="img/racha.jpg" class="ui big image" alt="profile picture"
+                            style="border-radius: 50px; height: 100px;">
+                    </div>
+                    <input onclick="alert('Propulser votre idée ici ...')" type="text" placeholder="Propulsez votre idée !"
+                        readonly="readonly"
+                        style="border:none; border-radius:0px 50px 50px 0; cursor:pointer; background-color:#FFFFFF; height: 50px;">
+                </div>
+                <div class="ui grid container">
+                    <div class="three column row" style="margin-left:100px;">
+                        <div class="column">
+                            <a class="ui link" href="#" style="color:#2c2b2bc8;"><i class="icon ion-md-images"
+                            style="font-size: 40px; color: #108ed7;"></i><br>Picture</a>
+                        </div>
+                        <div class="column">
+                            <a class="ui link" href="#" style="color:#2c2b2bc8;"><i class="icon ion-md-videocam"
+                            style="font-size: 40px; color: rgba(50, 95, 1, 0.666);"></i><br>Video</a>
+                        </div>
+                        <div class="column">
+                            <a class="ui link" href="#" style="font-size: 14px; color: #2c2b2bc8;"><i
+                            class="icon ion-md-attach"
+                            style="font-size: 40px; color: rgba(19, 19, 19, 0.627);"></i><br>Attached</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section Divider-->
+            <div class="ui container"> 
+                <h2 class="ui horizontal divider" style="float: left;">
+                    Or
+                </h2>
+            </div><br><br>
+            <!--Timeline posts-->
+            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2)">
+                <div class="header">
+                    <img class="ui mini image" src="img/girl.png" alt="">
+                    <span>Author Name</span>
+                    <span>Author Role</span>
+                    <span>Posted on</span>
+                    <div class="follow">
+                        <button class="ui button" style="background-color:#d79b1029; color:#D79A10;">Connect</button>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-area">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="img-video-area">
+                        <img class="ui big image" src="#" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Right side timeline content-->
+        <div class="four wide sticky column">
+            Droite
+        </div>
+    </section>
+   </div>
+
 </body>
 </html>

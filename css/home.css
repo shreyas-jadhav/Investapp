@@ -1,0 +1,63 @@
+body {            
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+}
+
+*{
+    font-family: "Quicksand";
+}
+
+code{
+    font-family: "Quicksand";
+}
+
+a{
+    font-family: "Quicksand";
+}
+
+.standard {
+        background-color: #d79b1029;
+        border-radius: 3px;
+        display: inline-block;
+        font-family: "Quicksand";
+        font-size: 0.875em;
+        font-weight: bold;
+        padding: 1px 6px;
+        vertical-align: baseline;
+        color: #D79A10;
+}
+
+.privilege{
+    background-color: #45d71029;
+        border-radius: 50px;
+        display: inline-block;
+        font-family: "Quicksand";
+        font-size: 0.875em;
+        font-weight: bold;
+        padding: 6px;
+        vertical-align: baseline;
+        color: #257e05;
+}
+
+.notification, .events, .profile{
+    color: #2c2b2bc8;
+}
+
+.profile:hover{
+    border:0px solid #d79b1037;
+    color:#D79A10;
+    
+
+}
+
+.notification:hover{
+    border: 0px solid #d79b1037;
+    color: #D79A10;
+}
+
+.events:hover{
+    border: 0px solid #d79b1037;
+    color: #D79A10;
+}
