@@ -9,6 +9,10 @@ body {
     font-family: "Quicksand";
 }
 
+h2{
+    font-family: "Quicksand";
+}
+
 code{
     font-family: "Quicksand";
 }
@@ -30,15 +34,11 @@ a{
 }
 
 .privilege{
-    background-color: #45d71029;
-        border-radius: 50px;
-        display: inline-block;
-        font-family: "Quicksand";
-        font-size: 0.875em;
+    background-color: #10d75229;
+        border-radius: 50px;               
         font-weight: bold;
-        padding: 6px;
-        vertical-align: baseline;
-        color: #257e05;
+        padding: 6px;        
+        color: #088728;
 }
 
 .notification, .events, .profile{

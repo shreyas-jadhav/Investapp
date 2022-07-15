@@ -15,16 +15,16 @@
     <div class = "ui stackable four column grid"  style="background-color: rgb(236, 236, 236, .2); margin: auto;">
             <div class="column" style="margin: auto;">
                 <div class="ui icon input"> 
-                    <h2 style="font-family:Quicksand; margin:auto; margin-right:10px;"><a href="#" style="color:#D79A10">InvestApp </a></h2> 
-                    <input type="text" placeholder="Search..." style="border:1px solid inherit; border-radius: 50px; width: 350px;">
+                    <h2 style="margin:auto; margin-right:10px;"><a href="#" style="color:#D79A10">InvestApp </a></h2> 
+                    <input type="text" placeholder="Search..." style="border:0px; border-radius: 50px; width: 350px; background-color:#d79b100d ;">
                     <i class="search icon"></i>
                 </div>
             </div>
         <div class = "column" style="margin: auto;">                                
-                <a class="notification" href=""><i class="icon ion-md-notifications" style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>
-                <a class="profile" href=""><i class="icon ion-md-person" style="font-size: 25px; position: relative; top:5px;"></i></a>
-                <a class="events" href=""><i class="icon ion-md-calendar" style="font-size: 25px; position: relative; top:5px;"></i></a> |                 
-                <a href="#"> <code class="privilege" style="font-family: Quicksand; font-weight: bolder;" >Move to Premium <i class="icon ion-md-medal"></i></code></a>
+                <a class="notification" href=""><i class="icon ion-ios-notifications" style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>                
+                <a class="events" href=""><i class="icon ion-md-calendar" style="font-size: 25px; position: relative; top:5px;"></i></a>
+                <a href=""><img class="ui avatar image" src="img/user-man2.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> | 
+                <a href="#"> <code class="privilege" style="background-color:#d79b1029; color:#D79A10;" >Move to Premium <i class="icon ion-md-medal"></i></code></a>
         </div>  
     </div><br><br>
 
@@ -35,17 +35,13 @@
         <div class="three wide sticky column">
             Gauche
         </div>
-        <!--Timeline-->
+        <!--Timeline typing area-->
         <div class="nine wide column">
-            <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2) ;">
-                <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">
-                    <div class="ui label" style="background-color:inherit; ">
-                        <img src="img/racha.jpg" class="ui big image" alt="profile picture"
-                            style="border-radius: 50px; height: 100px;">
-                    </div>
-                    <input onclick="alert('Propulser votre idée ici ...')" type="text" placeholder="Propulsez votre idée !"
-                        readonly="readonly"
-                        style="border:none; border-radius:0px 50px 50px 0; cursor:pointer; background-color:#FFFFFF; height: 50px;">
+            <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2);">
+                <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">                    
+                   <a href=""><img class="ui avatar image" src="img/user-man2.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
+                <input onclick="alert(prompt('Propulser votre idée ici ...'))" type="text" placeholder="Propulsez votre idée !" readonly="readonly"
+                        style="border:none; border-radius:0px 50px 50px 0px; cursor:pointer; background-color:#FFFFFF;">
                 </div>
                 <div class="ui grid container">
                     <div class="three column row" style="margin-left:100px;">
@@ -67,28 +63,237 @@
             </div>
             <!--Section Divider-->
             <div class="ui container"> 
-                <h2 class="ui horizontal divider" style="float: left;">
-                    Or
+                <h2 class="ui horizontal floated left divider" style="float:left; text-transform:lowercase; ">
+                    Fil d'actualité
                 </h2>
             </div><br><br>
             <!--Timeline posts-->
-            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2)">
-                <div class="header">
-                    <img class="ui mini image" src="img/girl.png" alt="">
-                    <span>Author Name</span>
-                    <span>Author Role</span>
-                    <span>Posted on</span>
-                    <div class="follow">
-                        <button class="ui button" style="background-color:#d79b1029; color:#D79A10;">Connect</button>
+            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
+                <div class="header" style="padding:15px">
+                    <div class="header" style="height:60px;">                        
+                            <img class="ui avatar image" src="img/user-man2.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
+                            <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Jerry Ella</span></a><br>                            
+                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">InvestApp Head Mananger</span></a><br>
+                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1h ago</span></a>                            
+                    </div>
+                    <div class="right floated column">
+                        <button class="ui button" style="background-color:#d79b1029; color:#D79A10; float:right; position: relative; bottom:50px">Connect</button>
                     </div>
                 </div>
-                <div class="content">
+                <div class="ui divider container"></div>
+                <div class="invest-post" style="padding:15px">
                     <div class="text-area">
-                        <p></p>
-                        <p></p>
+                        <h3>Opportunity in subasharian Africa</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam pariatur distinctio!</p>
+                        <div class="img-video-area">
+                            <img class="ui big image" src="img/business.jpeg" alt="">
+                        </div>
                     </div>
-                    <div class="img-video-area">
-                        <img class="ui big image" src="#" alt="">
+                    <div class="ui divider container"></div>
+                    <!--Reaction on the post-->
+                    <div class="ui grid container">
+                       <div class="three column grid">
+                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
+                                <div class="item">
+                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span style="font-size:14px; color: #088728;">5k</span></i></a>
+                                </div>
+                                <div class="item">                                    
+                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span style="font-size:14px; color: #D79A10;">12k</span></i></a>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="ui divider container"></div>
+                       <div class="ui stackable four column grid">
+                            <div id = "" class="ui very relaxed horizontal list" style="margin:auto; padding: 10px;">
+                                <a class="item">
+                                    <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
+                                    <div class="content">
+                                        <span class="header">Like</span>
+                                    </div>
+                                </a>
+                                <a class="item">
+                                    <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
+                                    <div class="content">
+                                        <span class="header">Comment</span>
+                                    </div>
+                                </a>
+                                <a class="item">
+                                    <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
+                                    <div class="content">
+                                        <span class="header">Share</span>
+                                    </div>
+                                </a>
+                                <div class="item">
+                                    <div class="content">
+                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                </div>
+            </div><br>
+                <!--Timeline 2-->
+            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
+                <div class="header" style="padding:15px">
+                    <div class="header" style="height:60px;">
+                        <img class="ui avatar image" src="img/user-girl2.png"
+                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
+                        <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">TE Maimouna</span></a><br>
+                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrpreneur</span></a><br>
+                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 month ago</span></a>
+                    </div>
+                    <div class="right floated column">
+                        <button class="ui button"
+                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px">Disonnect</button>
+                    </div>
+                </div>
+                <div class="ui divider container"></div>
+                <div class="invest-post" style="padding:15px">
+                    <div class="text-area">
+                        <h3>Water supply in desertic countries</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit
+                            tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam
+                            pariatur distinctio!</p>
+                        <div class="ui container">
+                            <video style="width:100%; height:100%" controls>
+                                <source src="img/water.mp4" type="video/mp4">
+                                <source src="img/water.ogg" type="video/ogg">
+                                Your browser does not support the video tag
+                            </video>
+                        </div>
+                    </div>
+                    <div class="ui divider container"></div>
+                    <!--Reaction on the post-->
+                    <div class="ui grid container">
+                        <div class="three column grid">
+                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
+                                <div class="item">
+                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span
+                                                style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span
+                                                style="font-size:14px; color: #088728;">5k</span></i></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span
+                                                style="font-size:14px; color: #D79A10;">12k</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui divider container"></div>
+                    <div class="ui stackable four column grid">
+                        <div class="ui very relaxed horizontal list" style="margin:auto;" style="border-radius:0px;">
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Like</span>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Comment</span>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Share</span>
+                                </div>
+                            </a>
+                            <div class="item">
+                                <div class="content">
+                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <!--Timeline 3-->
+            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
+                <div class="header" style="padding:15px">
+                    <div class="header" style="height:60px;">
+                        <img class="ui avatar image" src="img/user-man3.png"
+                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
+                        <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Gregoire Anthony</span></a><br>
+                        <a href="#"><span
+                                style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrepreneur</span></a><br>
+                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 week ago</span></a>
+                    </div>
+                    <div class="right floated column">
+                        <button class="ui button"
+                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px">Disonnect</button>
+                    </div>
+                </div>
+                <div class="ui divider container"></div>
+                <div class="invest-post" style="padding:15px">
+                    <div class="text-area">
+                        <h3>Moving sidewalk</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit
+                            tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam
+                            pariatur distinctio!</p>
+                        <div class="ui container">
+                            <video style="width:100%; height:100%" controls>
+                                <source src="img/walkside.mp4" type="video/mp4">
+                                <source src="img/walkside.ogg" type="video/ogg">
+                                Your browser does not support the video tag
+                            </video>
+                        </div>
+                    </div>
+                    <div class="ui divider container"></div>
+                    <!--Reaction on the post-->
+                    <div class="ui grid container">
+                        <div class="three column grid">
+                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
+                                <div class="item">
+                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span
+                                                style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span
+                                                style="font-size:14px; color: #088728;">5k</span></i></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span
+                                                style="font-size:14px; color: #D79A10;">12k</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui divider container"></div>
+                    <div class="ui stackable four column grid">
+                        <div class="ui very relaxed horizontal list" style="margin:auto;">
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Like</span>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Comment</span>
+                                </div>
+                            </a>
+                            <a class="item">
+                                <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
+                                <div class="content">
+                                    <span class="header">Share</span>
+                                </div>
+                            </a>
+                            <div class="item">
+                                <div class="content">
+                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,6 +304,5 @@
         </div>
     </section>
    </div>
-
 </body>
 </html>
