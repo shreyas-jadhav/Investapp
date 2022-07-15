@@ -6,26 +6,30 @@ body {
 }
 
 *{
-    font-family: "Quicksand";
+    font-family: "Gudea";
 }
 
-h2{
-    font-family: "Quicksand";
+h1, h2, h3, h4, h5, h6{
+    font-family: "Gudea";
+}
+
+span{
+    font-family: "Gudea";
 }
 
 code{
-    font-family: "Quicksand";
+    font-family: "Gudea";
 }
 
 a{
-    font-family: "Quicksand";
+    font-family: "Gudea";
 }
 
 .standard {
         background-color: #d79b1029;
         border-radius: 3px;
         display: inline-block;
-        font-family: "Quicksand";
+        font-family: "Gudea";
         font-size: 0.875em;
         font-weight: bold;
         padding: 1px 6px;

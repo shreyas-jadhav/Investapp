@@ -7,7 +7,7 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Jura&family=Open+Sans:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Fil d'actualité | InvestApp</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div class="column" style="margin: auto;">
                 <div class="ui icon input"> 
                     <h2 style="margin:auto; margin-right:10px;"><a href="#" style="color:#D79A10">InvestApp </a></h2> 
-                    <input type="text" placeholder="Search..." style="border:0px; border-radius: 50px; width: 350px; background-color:#d79b100d ;">
+                    <input type="text" placeholder="Search..." style="border:0px; border-radius: 50px; width: 350px;">
                     <i class="search icon"></i>
                 </div>
             </div>
@@ -31,15 +31,105 @@
     <!--Begining of timeline content-->
    <div class="ui container">
     <section class="ui stackable three column grid">
-        <!--Left side timeline section-->
-        <div class="three wide sticky column">
-            Gauche
+        <!----------------------------Left side timeline section------------------------------->
+        <div class="ui three wide sticky column">
+            <div class="ui center aligned icon header" style="border: 1px solid inherit; padding:12px; border-radius:10px; background-color: #D79A10">
+                <a href="#"><img src="img/user-man2.png" class="ui avatar image" style="width:48px; height:48px; border: 2px solid #FFFFFF" />
+                    <h3 style="color:#FFF; margin:auto">Jerry Ella</h3>
+                    <h4 style="color:#FFF; font-weight: lighter; margin: auto;">Investapp Head Manager</h4>                    
+                </a>
+            </div>
+            <div class="ui divider container"></div>
+            <div class="ui list" style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
+                <a class="item">
+                    <i class="icon ion-md-person"></i>
+                    <div class="content">
+                        <div class="header">Profil</div>
+                        <div class="description">Mon profil
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-create"></i>
+                    <div class="content">
+                        <div class="header">Posts</div>
+                        <div class="description">Mes publications
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-school"></i>
+                    <div class="content">
+                        <div class="header">Formations</div>
+                        <div class="description">Formations certifiantes
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-contacts"></i>
+                    <div class="content">
+                        <div class="header">Meeting</div>
+                        <div class="description">Rencontre partenaires</div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-contacts"></i>
+                    <div class="content">
+                        <div class="header">Networking</div>
+                        <div class="description">Mes connexions
+                            <sup>123</sup>                            
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-mail"></i>
+                    <div class="content">
+                        <div class="header">Message</div>
+                        <div class="description">Send a straight message</div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <div class="item" style="cursor:help ;">
+                    <i class="help icon"></i>
+                    Ask for help
+                </div>
+            </div>
+            <div class="ui container">
+                <h2 class="ui horizontal divider" style="text-transform:lowercase; ">
+                    Suggestions
+                </h2>
+            </div>
+            <div class="ui middle aligned selection list">
+                <div class="item">
+                    <img class="ui avatar image" src="img/1.png">
+                    <div class="content">
+                        <div class="header">Helen</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/2.png">
+                    <div class="content">
+                        <div class="header">Christian</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/3.png">
+                    <div class="content">
+                        <div class="header">Daniel</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--Timeline typing area-->
+        <!----------------------------Timeline typing area-------------------------------------->
         <div class="nine wide column">
             <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2);">
                 <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">                    
-                   <a href=""><img class="ui avatar image" src="img/user-man2.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
+                   <a href="#"><img class="ui avatar image" src="img/user-man2.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
                 <input onclick="alert(prompt('Propulser votre idée ici ...'))" type="text" placeholder="Propulsez votre idée !" readonly="readonly"
                         style="border:none; border-radius:0px 50px 50px 0px; cursor:pointer; background-color:#FFFFFF;">
                 </div>
@@ -61,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <!--Section Divider-->
+            <!-------------------Section Divide------------------------>
             <div class="ui container"> 
                 <h2 class="ui horizontal floated left divider" style="float:left; text-transform:lowercase; ">
                     Fil d'actualité
@@ -75,10 +165,7 @@
                             <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Jerry Ella</span></a><br>                            
                             <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">InvestApp Head Mananger</span></a><br>
                             <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1h ago</span></a>                            
-                    </div>
-                    <div class="right floated column">
-                        <button class="ui button" style="background-color:#d79b1029; color:#D79A10; float:right; position: relative; bottom:50px">Connect</button>
-                    </div>
+                    </div>                    
                 </div>
                 <div class="ui divider container"></div>
                 <div class="invest-post" style="padding:15px">
@@ -112,24 +199,24 @@
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header">Like</span>
+                                        <span class="header" style="font-family: Gudea;">Like</span>
                                     </div>
                                 </a>
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header">Comment</span>
+                                        <span class="header" style="font-family: Gudea;">Comment</span>
                                     </div>
                                 </a>
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header">Share</span>
+                                        <span class="header" style="font-family: Gudea;">Share</span>
                                     </div>
                                 </a>
                                 <div class="item">
                                     <div class="content">
-                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +235,7 @@
                     </div>
                     <div class="right floated column">
                         <button class="ui button"
-                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px">Disonnect</button>
+                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px; font-family: Gudea;">Disonnect</button>
                     </div>
                 </div>
                 <div class="ui divider container"></div>
@@ -192,24 +279,24 @@
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Like</span>
+                                    <span class="header" style="font-family: Gudea;">Like</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Comment</span>
+                                    <span class="header" style="font-family: Gudea;">Comment</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Share</span>
+                                    <span class="header" style="font-family: Gudea;">Share</span>
                                 </div>
                             </a>
                             <div class="item">
                                 <div class="content">
-                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +316,7 @@
                     </div>
                     <div class="right floated column">
                         <button class="ui button"
-                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px">Disonnect</button>
+                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px; font-family: Gudea;">Disonnect</button>
                     </div>
                 </div>
                 <div class="ui divider container"></div>
@@ -273,24 +360,24 @@
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Like</span>
+                                    <span class="header" style="font-family: Gudea;">Like</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Comment</span>
+                                    <span class="header" style="font-family: Gudea;">Comment</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header">Share</span>
+                                    <span class="header" style="font-family: Gudea;">Share</span>
                                 </div>
                             </a>
                             <div class="item">
                                 <div class="content">
-                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728;">Apply</a>
+                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
                                 </div>
                             </div>
                         </div>
@@ -298,9 +385,48 @@
                 </div>
             </div>
         </div>
-        <!--Right side timeline content-->
+        <!-------------------------------Right side timeline content---------------------------------------->
         <div class="four wide sticky column">
-            Droite
+            <!--Ad space-->
+            <div id="pub-space" style="background-color: rgb(236, 236, 236, .2) ;">
+                <div class="ui medium rectangle ad">
+                     Ad Code Goes Here
+                  <ins class="adsbygoogle"
+                       style="display:inline-block;width:300px;height:250px"
+                       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                       data-ad-slot="XXXXXXXXXX"></ins>
+                  <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                  </script>
+                  
+                </div>
+            </div>
+            <!--End Ad-->
+            <!--Online users-->
+            <div class="ui very relaxed list" style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
+                <div class="item">
+                    <img class="ui avatar image" src="img/4.jpeg">
+                    <div class="content">
+                        <a class="">Daniel Louise</a>
+                        <div class="description"><a style="color: green">Online</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/5.jpeg">
+                    <div class="content">
+                        <a class="">Stevie Feliciano</a>
+                        <div class="description"><a style="color: green">Online</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/user-girl.png">
+                    <div class="content">
+                        <a class="">Elliot Fu</a>
+                        <div class="description"><a style="color: green">Online</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--End online users-->
         </div>
     </section>
    </div>
