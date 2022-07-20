@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Profile | {{ user.name }}</title>
+</head>
+<body>
+    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
+        <div class="column" style="margin: auto;">
+            <div class="ui icon input">
+                <h2 style="margin:auto; margin-right:10px;"><a href="#" style="color:#D79A10">InvestApp </a></h2>
+                <input type="text" placeholder="Search..." style="border:0px; border-radius: 50px; width: 350px;">
+                <i class="search icon"></i>
+            </div>
+        </div>
+        <div class="column" style="margin: auto;">
+            <a class="notification" href=""><i class="icon ion-ios-notifications" style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>
+            <a class="events" href=""><i class="icon ion-md-calendar" style="font-size: 25px; position: relative; top:5px;"></i></a>
+            <a href=""><img class="ui avatar image" src="img/user-girl.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
+            <a href="#"> <code class="privilege" style="background-color:#d79b1029; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+        </div>
+    </div><br>
+    <div class="ui container">
+    <section class="ui stackable three column grid">
+        <!----------------------------Left side timeline section------------------------------->        
+        <div class="ui three wide sticky column">
+        <div class="ui center aligned icon header"
+            style="border: 1px solid inherit; padding:12px; border-radius:10px; background-color: #D79A10">
+            <a href="#"><img src="img/user-man2.png" class="ui avatar image"
+                    style="width:48px; height:48px; border: 2px solid #FFFFFF" />
+                <h3 style="color:#FFF; margin:auto">User Name</h3>
+                <h4 style="color:#FFF; font-weight: lighter; margin: auto;">User Role</h4>
+            </a>
+        </div>
+            <div class="ui list" style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
+                <a class="item">
+                    <i class="icon ion-md-person"></i>
+                    <div class="content">
+                        <div class="header">Profile</div>
+                        <div class="description">My profile
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-create"></i>
+                    <div class="content">
+                        <div class="header">Posts</div>
+                        <div class="description">My posts
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-school"></i>
+                    <div class="content">
+                        <div class="header">Trainings</div>
+                        <div class="description">Certified trainings
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-tv"></i>
+                    <div class="content">
+                        <div class="header">Meeting</div>
+                        <div class="description">Partner encounter</div>
+                    </div>
+                </a>                             
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-mail"></i>
+                    <div class="content">
+                        <div class="header">Message</div>
+                        <div class="description">Send a straight message</div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <div class="item" style="cursor:help ;">
+                    <i class="help icon"></i>
+                    Ask for help
+                </div>
+            </div>
+            <!--Statistics-->
+            <div class="ui container">
+                <h2 class="ui horizontal divider" style="text-transform:lowercase; ">
+                    Statistics
+                </h2>
+            </div>
+            <div class="ui list"
+                style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
+                <a class="item">
+                    <i class="icon ion-md-people"></i>
+                    <div class="content">
+                        <div class="header">Netwok</div>
+                        <div class="description">My connections
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-construct"></i>
+                    <div class="content">
+                        <div class="header">Projects</div>
+                        <div class="description">Voted project
+                        </div>
+                    </div>
+                </a>
+                <div class="ui divider container"></div>
+                <a class="item">
+                    <i class="icon ion-md-person"></i>
+                    <div class="content">
+                        <div class="header">Interactions</div>
+                        <div class="description">Profile views
+                        </div>
+                    </div>
+                </a>
+            </div>                                    
+        </div>
+        <!----------------------------Timeline typing area-------------------------------------->
+        <div class="ten wide column">
+            <div class="ui container">
+                <div class="">
+                    <h4>Related Post</h4>
+                    <div class="ui divider"></div>
+                </div><br>
+                <div class="ui one column grid">                
+                    <div class="column">
+                        <div class="ui segment">
+                            <a class="ui orange right ribbon label">Specs</a>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit optio quisquam est, perspiciatis cupiditate reiciendis corrupti inventore alias magni tempora natus hic neque impedit similique repellendus soluta, id voluptatibus.</p>
+                            <div class="ui divider"></div>
+                            <div class="ui container">
+                                <img class="ui image" src="img/it-room.jpeg" alt="">
+                            </div>
+                            <div class="ui divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui three wide sticky column">
+            Pub space and connection suggestions
+        </div>        
+    </section>
+   </div>
+</body>
+</html>
