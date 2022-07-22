@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/profile.css">
     <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Profile | {{ user.name }}</title>
+    <title>{{ user.name }}'s posts | InvestApp</title>
 </head>
 <body>
     <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">        
         <div class="" style="margin:auto;">
-        <img class="ui mini image" src="img/logo.png"
-            style="width:148px; height:auto; margin: auto; margin-bottom:-30px;" />
+        <img class="ui mini image" src="img/LOGO.svg" style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />        
         </div>
         <div class="column" style="margin:auto; margin-left:-180px;">
             <div class="ui icon input">
@@ -126,11 +125,11 @@
                 </a>
             </div>                                    
         </div>
-        <!----------------------------Timeline typing area-------------------------------------->
+        <!----------------------------All usesr's posts-------------------------------------->
         <div class="ten wide column">
             <div class="ui container">
                 <div class="">
-                    <h4>Related Post</h4>
+                    <h4>Related Posts</h4>
                     <div class="ui divider"></div>
                 </div><br>
                 <!--Starting posts-->
@@ -139,9 +138,10 @@
                         <div class="ui segment" style="background-color:rgb(236, 236, 236, .2); border:none; border-radius: 10px;">
                             <div class="" style="position:relative; bottom:40px; margin-bottom:-40px">
                                 <img class="ui avatar image" src="img/2.png" alt="" style="width: 48px; height:48px; border: 2px solid #FFFFFF;">
-                                <span style="position:relative; top:15px">User Name - <i>12h ago</i></span>
+                                <span style="position:relative; top:15px">User Name - <i style="font-weight: lighter; font-style:normal">12h ago</i></span>
                             </div>                                                            
                             <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px;">Projet</a>
+                            <h2>Project title</h2>
                             <p style="font-family: Gudea; font-size: 16px; font-weight: lighter;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit optio quisquam est, perspiciatis cupiditate reiciendis corrupti inventore alias magni tempora natus hic neque impedit similique repellendus soluta, id voluptatibus.</p>
                             <div class="ui divider"></div>
                             <div class="ui container">
@@ -190,8 +190,67 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>                    
+                </div><br><br>
+                <div class="ui one column grid">
+                    <div class="column">
+                        <div class="ui segment" style="background-color:rgb(236, 236, 236, .2); border:none; border-radius: 10px;">
+                            <div class="" style="position:relative; bottom:40px; margin-bottom:-40px">
+                                <img class="ui avatar image" src="img/2.png" alt="" style="width: 48px; height:48px; border: 2px solid #FFFFFF;">
+                                <span style="position:relative; top:15px">User Name - <i style="font-weight: lighter; font-style:normal">12h ago</i></span>
+                            </div>
+                            <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px;">Projet</a>
+                            <h2>Project title</h2>
+                            <p style="font-family: Gudea; font-size: 16px; font-weight: lighter;">Lorem ipsum dolor, sit amet
+                                consectetur adipisicing elit. Mollitia odit optio quisquam est, perspiciatis cupiditate reiciendis
+                                corrupti inventore alias magni tempora natus hic neque impedit similique repellendus soluta, id
+                                voluptatibus.</p>
+                            <div class="ui divider"></div>
+                            <div class="ui container">
+                                <img class="ui image" src="img/plan.png" alt="">
+                            </div>
+                            <div class="ui divider"></div>
+                            <div class="ui grid container">
+                                <div class="three column grid">
+                                    <div class="ui relaxed horizontal list">
+                                        <div class="item">
+                                            <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span style="font-size:14px; color: #088728;">5k</span></i></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span style="font-size:14px; color: #D79A10;">12k</span></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui divider"></div>
+                            <div class="ui grid container">
+                                <div id="" class="ui very relaxed horizontal list"
+                                    style="margin:auto; display:inline-block; padding: 10px;">
+                                    <a class="item">
+                                        <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
+                                        <div class="content">
+                                            <span class="header" style="font-family: Gudea;">Like</span>
+                                        </div>
+                                    </a>
+                                    <a class="item">
+                                        <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
+                                        <div class="content">
+                                            <span class="header" style="font-family: Gudea;">Comment</span>
+                                        </div>
+                                    </a>
+                                    <a class="item">
+                                        <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
+                                        <div class="content">
+                                            <span class="header" style="font-family: Gudea;">Share</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
                 </div>
             </div>
         </div>
