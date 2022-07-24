@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+
+}
+
+* {
+    font-family: "Gudea";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Gudea";
+}
+
+span {
+    font-family: "Gudea";
+}
+
+code {
+    font-family: "Gudea";
+}
+
+a {
+    font-family: "Gudea";
+}
+
+.standard {
+    background-color: #d79b1029;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: "Gudea";
+    font-size: 0.875em;
+    font-weight: bold;
+    padding: 1px 6px;
+    vertical-align: baseline;
+    color: #D79A10;
+}
+
+.privilege {
+    background-color: #10d75229;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 6px;
+    color: #088728;
+}
+
+.notification,
+.events,
+.profile {
+    color: #2c2b2bc8;
+}
+
+.profile:hover {
+    border: 0px solid #d79b1037;
+    color: #D79A10;
+
+
+}
+
+.notification:hover {
+    border: 0px solid #d79b1037;
+    color: #D79A10;
+}
+
+.events:hover {
+    border: 0px solid #d79b1037;
+    color: #D79A10;
+}
