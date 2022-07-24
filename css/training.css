@@ -72,3 +72,11 @@ a {
     border: 0px solid #d79b1037;
     color: #D79A10;
 }
+
+strong {
+    font-family: "Gudea";
+    font-size: 18px;
+    font-weight: lighter;
+
+
+}
