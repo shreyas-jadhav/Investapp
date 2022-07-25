@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 h1,
@@ -15,26 +15,26 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 span {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 code {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 a {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 .standard {
     background-color: #d79b1029;
     border-radius: 3px;
     display: inline-block;
-    font-family: "Gudea";
+    font-family: "Baloo";
     font-size: 0.875em;
     font-weight: bold;
     padding: 1px 6px;
@@ -71,4 +71,8 @@ a {
 .events:hover {
     border: 0px solid #d79b1037;
     color: #D79A10;
+}
+
+#new-meeting:hover{
+    background: red;
 }
