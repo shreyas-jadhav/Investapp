@@ -74,5 +74,15 @@ a {
 }
 
 #new-meeting:hover{
-    background: red;
+    background : red;
+}
+.layout{
+    background-color: rgb(236, 236, 236, .2);
+    padding: 12px;
+    border-radius:12px;
+    margin:auto;
+}
+
+.layout a{
+    list-style-type: none;
 }
