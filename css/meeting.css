@@ -73,8 +73,16 @@ a {
     color: #D79A10;
 }
 
+#new-meeting{
+    border:1px solid #D79A10;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    color: #D79A10;
+}
+
 #new-meeting:hover{
-    background : red;
+    background-color: #d79b1029;
+    border: 1px dashed #D79A10;
 }
 .layout{
     background-color: rgb(236, 236, 236, .2);
