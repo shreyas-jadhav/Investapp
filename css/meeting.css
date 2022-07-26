@@ -107,7 +107,7 @@ a {
 }
 .meet.btn button{
     border:2px dashed rgba(160, 152, 152, 0.2);
-    background-color: inherit;    
+    background-color: white;    
     font-family:"Barlow";
     font-weight:900;
 }
