@@ -78,7 +78,7 @@ a {
     border-radius: 50px;
     background-color: #FFFFFF;
     color: #D79A10;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 #new-meeting:hover{
