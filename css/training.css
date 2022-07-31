@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 h1,
@@ -15,19 +15,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 span {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 code {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 a {
-    font-family: "Gudea";
+    font-family: "Barlow";
 }
 
 .standard {

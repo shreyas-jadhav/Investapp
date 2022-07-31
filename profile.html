@@ -7,7 +7,8 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <title>Profile | InvestApp</title>
 </head>
@@ -130,33 +131,74 @@
                 </div>
             </div>
             <!----------------------------All usesr's posts-------------------------------------->
-            <div class="ten wide column">
+            <div class="thirteen wide column">
                 <div class="ui container">
-                    <div class="">
-                        <h4>User Profile</h4>
-                        <div class="ui divider"></div>
-                    </div><br>
-                    <!--Starting posts-->
-                    <div class="ui column grid" style="border:none">
-                        <div class="ui" style="width:100%; background: rgb(236, 236, 236, .2); border:none; border-radius: 12px; padding: 10px;">
-                            <div class="">
-                                <img class="ui small left floated image" src="img/3.png">
-                                <strong>Firstname :</strong><spann> CIMORIEN</span><br>
-                                <strong>Name :</strong><spann> Auguste</span><br>
-                                <strong>E-mail :</strong><spann> username@domain.com</span><br>
-                                <strong>Date and birthplace :</strong><spann> 13-09-1960, Illinois </span><br>
-                                <strong>Country :</strong><spann> US </span><br>
-                                <strong>Role :</strong><spann> Head Manager </span>                                    
-                            </div><br>
-                                <div class="">
-                                    <button class="ui mini primary button" style="border-radius:50px">Edit</button>
-                                    <button class="ui mini green button" style="border-radius:50px">Save</button>
-                                </div>
+                    <section>
+                        <div class="" style="border:1px solid inherit; margin-top: 80px; border-radius: 15px 15px 0 0; background-color: rgb(236, 236, 236, .2);">
+                                        <div class="ui dimmer">
+                                            <div class="content">
+                                                <div class="center">
+                                                    <div class="ui inverted button">Add Friend</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="ui avatar small image" id="blurring dimmable image" onmouseout="$('#image').dimmer({on: 'hover'});" src="img/3.png" style="position:relative; bottom:120px; left:350px">
+                            <h2 class="ui icon header">                                
+                                <div class="content" style="position: relative; top:60px; left:70px">
+                                    <span style="font-weight: bolder;">Auguste CIMORIEN</span>
+                                    <span class="sub header">From Gabon, Premium member</span>
+                                    <span class="sub header">123 Connections, 20 posts</span>                                    
+                                    <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+                                </div>                                
+                            </h2>
+                            <div class="profil btn" style="margin-left: 300px;">
+                                <button class="ui brown button" style="background-color:#d79b1029; color:#D79A10; border:none;border-radius: 50px; font-family: Barlow;"><i class="icon ion-md-link"></i> Connect</button>
+                                <button class="ui button" style="background-color:#1416134a; color:#FFF; border:none;border-radius: 50px; font-family: Barlow"><i class="icon ion-md-mail"></i> Message</button>
+                            </div>
                         </div>
-                    </div>
+                    </section><br>
+                    <section>
+                        <div class="civility" style="margin-top:20px;border:1px solid inherit; border-radius:0 0 0 0 0; background-color: rgb(236, 236, 236, .2);">
+                            <div class="circle icon" style="width: 50px; height: 50px; border-radius: 50%; border:3px dashed #000; position:relative; left:20px; bottom:28px">
+                                <i class="big avatar address card outline icon" style="position: relative; top:8px; left: 5px"></i>
+                            </div>
+                            <div class="block1">
+                                <div>First Name :</div>
+                                <div>Last Name :</div>
+                                <div>Date and place of birth :</div>
+                                <div>Gender :</div>
+                                <div>Country :</div>
+                            </div>                                                       
+                        </div>
+                    </section><br>
+                    <section>
+                        <div class="biography" style="margin-top:20px; border:1px solid inherit; border-radius: 0; background-color: rgb(236, 236, 236, .2);">
+                            <div class="circle icon" style="width: 50px; height: 50px; border-radius: 50%; border:3px dashed #000; position:relative; left:20px; bottom:28px">
+                                <i class="icon ion-md-bookmarks" style="position: relative; top:8px; left: 5px; font-size: 30px;"></i>                                
+                            </div>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, error excepturi quaerat et magnam repellendus sed repellat numquam sit soluta, autem in nulla dolorem odit facere sint voluptates recusandae quis?
+                            </div>
+                        </div>
+                    </section><br>
+                    <section>
+                        <div class="post" style="margin-top:20px; border:1px solid inherit; border-radius: 0 0 15px 15px; background-color: rgb(236, 236, 236, .2);">
+                            <div class="circle icon" style="width: 50px; height: 50px; border-radius: 50%; border:.2px solid rgb(236, 236, 236, .2); position:relative; left:20px; bottom:28px; background-color:rgb(236, 236, 236, .2)">
+                                <i class="big pencil alternate icon" style="position: relative; top:8px; left: 5px; font-weight: lighter;"></i>
+                            </div>
+                            <div class="content">
+                                Related posts
+                            </div>
+                        </div>                
+                    </section>
                 </div>
             </div>
         </section>
     </div>
+
+ 
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="js/semantic.min.js"></script>
 </body>
 </html>

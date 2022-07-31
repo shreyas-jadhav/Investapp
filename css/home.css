@@ -1,28 +1,33 @@
-body {            
+body {
     margin: 0;
     padding: 0;
     height: auto;
 
 }
 
-*{
-    font-family: "Gudea";
+* {
+    font-family: "Barlow";
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Gudea";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Barlow";
 }
 
-span{
-    font-family: "Gudea";
+span {
+    font-family: "Barlow";
 }
 
-code{
-    font-family: "Gudea";
+code {
+    font-family: "Barlow";
 }
 
-a{
-    font-family: "Gudea";
+a {
+    font-family: "Barlow";
 }
 
 .standard {
