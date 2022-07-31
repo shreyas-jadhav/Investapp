@@ -77,6 +77,30 @@ strong{
     font-family: "Gudea";
     font-size: 18px;
     font-weight: lighter;
+}
 
+.circleicon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: .2px solid rgb(236, 236, 236, .2);
+        position: relative;
+        left: 20px;
+        bottom: 28px;
+        box-shadow: 2px 2px gray;
+}
 
+.circleicon i{
+        position: relative;
+        top: 8px;
+        left: 10px;
+        font-weight: lighter;
+}
+
+.circleicon i span{
+    margin-left: 20px;
+}
+
+.content{
+    padding: 20px;
 }
