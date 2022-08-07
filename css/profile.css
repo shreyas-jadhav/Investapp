@@ -102,5 +102,12 @@ strong{
 }
 
 .content{
-    padding: 20px;
+    margin:auto;
+    padding: 10px;
+    text-align: justify;   
+}
+
+h3{
+    font-family: "Barlow";
+    font-weight: 100;
 }
