@@ -103,11 +103,13 @@ strong{
 
 .content{
     margin:auto;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;   
+    font-size:16px;
+    font-weight: 300;
 }
 
 h3{
     font-family: "Barlow";
-    font-weight: 100;
+    font-weight: 300;
 }
