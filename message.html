@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/message.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <title>Message | InvestApp</title>
 </head>
 
-<body style="margin:0">
+<body>
     <!--Main navigation bar-->
     <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
         <div class="" style="margin:auto;">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <!----------------------------Timeline typing area-------------------------------------->
+            <!----------------------------Message typing area-------------------------------------->
             <div class="nine wide column">
                 <!-------------------Section Divide------------------------>
                 <div class="ui container">
@@ -83,17 +83,26 @@
                         Sat, 2nd Nov. 2022
                     </h2>
                 </div><br><br>
-                <div class="ui container" style="border:1px solid inherit; border-radius:10px; position: absolute; bottom: 0; margin:0; background-color:rgb(236, 236, 236, .2);">
-                    <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">                        
-                        <i class="ui big blue paperclip icon"></i>
-                        <input type="text" placeholder="Propulsez votre idée !" style="border:none; border-radius:0px 50px 50px 0px; cursor:pointer; background-color:#FFFFFF;">
+                <div class="ui container">
+                    <div class="messaging">
+                        <div class="message-content">
+                            <div class="received-bubble">
+                                <span>Hi, Ok message well caught</span>
+                            </div>
+                            <div class="sent-bubble">
+                                <span>Hello, this is the first message I sent right here</span>
+                            </div>
+                        </div><br><br>
+                        <div class="ui fluid labeled input" id="message-input" style="border-radius:50px; padding: 15px; background-color:rgb(236, 236, 236, .2)">
+                            <i class="ui big blue paperclip icon"></i>
+                            <input type="text" placeholder="send your message here !"
+                                style="border:none; border-radius:0px 50px 50px 0px; background-color:#FFFFFF;">
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-------------------------------Right side timeline content---------------------------------------->
+            <!-------------------------------Right side content---------------------------------------->
             <div class="three wide sticky column">
-                <!--Ad space-->
-
                 <div class="ui medium rectangle ad">
                     <img src="img/1.png" class="ui huge avatar image" alt="" style="height: 200px; width:200px">
                 </div>
@@ -127,6 +136,7 @@
                             <div class="description"><a style="color: green">Online</a></div>
                         </div>
                     </div>
+                    
                 </div>
                 <!--End online users-->
             </div>

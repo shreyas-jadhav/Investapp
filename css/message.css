@@ -1,0 +1,17 @@
+/**/
+.received-bubble{
+    background-color: rgb(26, 176, 235);
+    color: #FFFFFF;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sent-bubble{
+    background-color: rgb(218, 131, 32);
+    color: #FFFFFF;
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: ;
+}
