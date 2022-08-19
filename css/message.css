@@ -1,17 +1,21 @@
-/**/
-.received-bubble{
-    background-color: rgb(26, 176, 235);
-    color: #FFFFFF;
-    float: left;
-    padding: 5px;
-    border-radius: 10px;
+.message-content{
+    background-color: aliceblue;
 }
 
-.sent-bubble{
-    background-color: rgb(218, 131, 32);
-    color: #FFFFFF;
+.sent{
     float: right;
+    background-color: green;
+    color: white;
     padding: 5px;
     border-radius: 10px;
-    margin-top: ;
+    margin-top: 10px;
+}
+
+.received{
+    float: left;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
