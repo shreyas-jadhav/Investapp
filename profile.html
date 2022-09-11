@@ -43,7 +43,7 @@
         <section class="ui stackable three column grid">
             <!----------------------------Left side timeline section------------------------------->
             <div class="ui three wide sticky column">
-                <div class="ui center aligned icon header"
+                <<div class="ui center aligned icon header"
                     style="height:auto; border: 1px solid inherit; border-radius:10px; background-color: rgb(236, 236, 236, .2); margin-top:20px; padding: 5px;">
                     <a href="#"><img src="img/3.png" class="ui avatar image"
                             style="width:48px; height:48px; border: 2px solid #FFFFFF; position: relative; bottom:45px; margin-top:20px; margin-bottom: -20px;" /></a>
@@ -140,16 +140,16 @@
             <div class="thirteen wide column">
                 <div class="ui container">
                     <section>
-                        <div class=""
-                            style="border:1px solid inherit; margin-top: 80px; border-radius: 15px 15px 0 0; background-color: rgb(236, 236, 236, .2);">
-                            <div class="ui dimmer">
-                                <div class="content">
-                                    <div class="center">
-                                        <div class="ui inverted button">Add Friend</div>
+                        <div class="" style="border:1px solid inherit; margin-top: 80px; border-radius: 15px 15px 0 0; background-color: rgb(236, 236, 236, .2);">                            
+                            <!--<img class="ui avatar small image" id="blurring dimmable image"  src="img/3.png" style="position:relative; bottom:120px; left:350px">-->
+                            <div class="ui circular image" style="position:relative; bottom:110px; left:350px">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <button class="ui small primary button">Update</button>
                                     </div>
                                 </div>
+                                <img src="img/3.png">
                             </div>
-                            <img class="ui avatar small image" id="blurring dimmable image"  src="img/3.png" style="position:relative; bottom:120px; left:350px">
                             <h2 class="ui icon header" style="margin-bottom: 120px">
                                 <div class="content" style="position: relative; top:60px; left:70px">
                                     <span class="sub header" style="font-weight: bold; text-align: center;">Auguste CIMORIEN</span>
@@ -209,6 +209,13 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/semantic.min.js"></script>
+    <script>
+        $('.ui.circular')
+                .dimmer({
+                    on: 'hover'
+                })
+                ;
+    </script>
 </body>
 
 </html>
