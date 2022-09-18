@@ -13,10 +13,10 @@
 <body>
     <!--Main navigation bar-->
     <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
-        <div class="" style="margin:auto;">
+        <a href="" class="" style="margin:auto;">
             <img class="ui mini image" src="img/LOGO.svg"
                 style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />
-        </div>
+        </a>
         <div class="column" style="margin:auto; margin-left:-180px;">
             <div class="ui icon input">
                 <input type="text" placeholder="Search..."
@@ -71,7 +71,7 @@
             </div> 
             <!--Events calendar-->
             <div class="ui icon top left pointing dropdown button">
-                <i class="calendar outline green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
+                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
                 <div class="menu">        
                     <div class="header" style="font-weight: bold;">
                         <i class="bookmark outline icon"></i>
@@ -80,15 +80,12 @@
                     <div class="scrolling menu">
                         <a href="#" class="item" data-value="important">
                             <i>No upcoming event</i>
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
-                            </div>
                         </a>
                     </div>
                 </div>
             </div>
-            <a href=""><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="premium.html"> <code class="privilege" style="background-color:#d79b1029; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+            <a href="profile.html"><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
+            <a href="premium.html"> <code class="privilege" style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
         </div>
     </div><br>
 
@@ -165,21 +162,21 @@
                 <div class="item">
                     <img class="ui avatar image" src="img/4.jpeg">
                     <div class="content">
-                        <a class="">Daniel Louise</a>
+                        <a href ="#" class="">Daniel Louise</a>
                         <div class="description"><a style="color: green">Online</a></div>
                     </div>
                 </div>
                 <div class="item">
                     <img class="ui avatar image" src="img/5.jpeg">
                     <div class="content">
-                        <a class="">Stevie Feliciano</a>
+                        <a href="#" class="">Stevie Feliciano</a>
                         <div class="description"><a style="color: green">Online</a></div>
                     </div>
                 </div>
                 <div class="item">
                     <img class="ui avatar image" src="img/user-girl.png">
                     <div class="content">
-                        <a class="">Elliot Fu</a>
+                        <a href="#" class="">Elliot Fu</a>
                         <div class="description"><a style="color: green">Online</a></div>
                     </div>
                 </div>
@@ -189,7 +186,7 @@
         <div class="nine wide column">
             <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2);">
                 <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">
-                   <a href="#"><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
+                   <a href="profile.html"><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
                 <input onclick="alert(prompt('Propulser votre idée ici ...'))" type="text" placeholder="Propulsez votre idée !" readonly="readonly" style="border:none; border-radius:0px 50px 50px 0px; cursor:pointer; background-color:#FFFFFF;">
                 </div>
                 <div class="ui grid container">
@@ -219,13 +216,14 @@
             <!--Timeline posts-->
             <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
                 <div class="header" style="padding:15px">
-                    <div class="header" style="height:60px;">                        
-                            <img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
-                            <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Jerry Ella</span></a><br>                            
-                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">InvestApp Head Mananger</span></a><br>
+                    <div class="header" style="height:60px;">                      
+                            <a href="{{ user.profile }}"><img class="ui avatar image" src="img/7.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
+                            <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Julie Ella</span></a><br>                            
+                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Gwarveal Accounter</span></a><br>
                             <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1h ago</span></a>                            
                     </div>                    
                 </div>
+                <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
                 <div class="ui divider container"></div>
                 <div class="invest-post" style="padding:15px">
                     <div class="text-area">
@@ -258,24 +256,24 @@
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header" style="font-family: Gudea;">Like</span>
+                                        <span class="header" style="font-family: Barlow;">Like</span>
                                     </div>
                                 </a>
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header" style="font-family: Gudea;">Comment</span>
+                                        <span class="header" style="font-family: Barlow;">Comment</span>
                                     </div>
                                 </a>
                                 <a class="item">
                                     <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
                                     <div class="content">
-                                        <span class="header" style="font-family: Gudea;">Share</span>
+                                        <span class="header" style="font-family: Barlow;">Share</span>
                                     </div>
                                 </a>
                                 <div class="item">
                                     <div class="content">
-                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
+                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Barlow;">Apply</a>
                                     </div>
                                 </div>
                             </div>
@@ -286,17 +284,14 @@
             <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
                 <div class="header" style="padding:15px">
                     <div class="header" style="height:60px;">
-                        <img class="ui avatar image" src="img/user-girl2.png"
-                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
+                        <a href="{{ user.profile }}"><img class="ui avatar image" src="img/user-girl2.png"
+                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
                         <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">TE Maimouna</span></a><br>
                         <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrpreneur</span></a><br>
                         <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 month ago</span></a>
-                    </div>
-                    <div class="right floated column">
-                        <button class="ui button"
-                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px; font-family: Gudea;">Disonnect</button>
-                    </div>
+                    </div>                   
                 </div>
+                <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
                 <div class="ui divider container"></div>
                 <div class="invest-post" style="padding:15px">
                     <div class="text-area">
@@ -338,24 +333,24 @@
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header" style="font-family: Gudea;">Like</span>
+                                    <span class="header" style="font-family: Barlow;">Like</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header" style="font-family: Gudea;">Comment</span>
+                                    <span class="header" style="font-family: Barlow;">Comment</span>
                                 </div>
                             </a>
                             <a class="item">
                                 <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
                                 <div class="content">
-                                    <span class="header" style="font-family: Gudea;">Share</span>
+                                    <span class="header" style="font-family: Barlow;">Share</span>
                                 </div>
                             </a>
                             <div class="item">
                                 <div class="content">
-                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
+                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Barlow;">Apply</a>
                                 </div>
                             </div>
                         </div>
@@ -372,12 +367,10 @@
                         <a href="#"><span
                                 style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrepreneur</span></a><br>
                         <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 week ago</span></a>
-                    </div>
-                    <div class="right floated column">
-                        <button class="ui button"
-                            style="background-color:#d7201029; color:#74200a; float:right; position: relative; bottom:50px; font-family: Gudea;">Disonnect</button>
-                    </div>
+                    </div>                    
                 </div>
+                <a class="ui orange right ribbon label"
+                    style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
                 <div class="ui divider container"></div>
                 <div class="invest-post" style="padding:15px">
                     <div class="text-area">

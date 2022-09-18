@@ -31,14 +31,69 @@
             </div>
         </div>
         <div class="column" style="margin: auto;">
-            <a class="notification" href=""><i class="icon ion-ios-notifications"
-                    style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>
-            <a class="events" href=""><i class="icon ion-md-calendar"
-                    style="font-size: 25px; position: relative; top:5px;"></i></a>
-            <a href=""><img class="ui avatar image" src="img/3.png"
+            <div class="ui icon top left pointing dropdown button">
+                <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup>3</sup>
+                <div class="menu">
+                    <div class="header">
+                        <i class="linkify icon"></i>
+                        Connection request
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <img class="ui avatar image" src="img/5.jpeg" alt="">
+                            Donatien Walker
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">1 week ago</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header">
+                        <i class="handshake outline icon"></i>
+                        Partnership request
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <img class="ui avatar image" src="img/2.png" alt="">
+                            Stephany Jwerio
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">1 min ago</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="header" style="font-weight: bold;">
+                        <i class="bookmark outline icon"></i>
+                        Project voted
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <i>Pushing Back the desert</i>
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Events calendar-->
+            <div class="ui icon top left pointing dropdown button">
+                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
+                <div class="menu">
+                    <div class="header" style="font-weight: bold;">
+                        <i class="bookmark outline icon"></i>
+                        Events
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <i>No upcoming event</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="profile.html"><img class="ui avatar image" src="img/3.png"
                     style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="#"> <code class="privilege"
-                    style="background-color:#d79b1029; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+            <a href="premium.html"> <code class="privilege"
+                    style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
         </div>
     </div><br>
     <div class="ui container">

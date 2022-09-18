@@ -13,21 +13,82 @@
     <title>User's posts | InvestApp</title>
 </head>
 <body>
-    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">        
+    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
         <div class="" style="margin:auto;">
-        <img class="ui mini image" src="img/LOGO.svg" style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />        
+            <img class="ui mini image" src="img/LOGO.svg"
+                style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />
         </div>
         <div class="column" style="margin:auto; margin-left:-180px;">
             <div class="ui icon input">
-                <input type="text" placeholder="Search..." style="border:none; border-radius: 50px; width: 350px; margin:auto;">
+                <input type="text" placeholder="Search..."
+                    style="border:none; border-radius: 50px; width: 350px; margin:auto;">
                 <i class="search icon"></i>
             </div>
         </div>
         <div class="column" style="margin: auto;">
-            <a class="notification" href=""><i class="icon ion-ios-notifications" style="font-size: 25px; position: relative; top:5px; margin-top:0px"></i></a>
-            <a class="events" href=""><i class="icon ion-md-calendar" style="font-size: 25px; position: relative; top:5px;"></i></a>
-            <a href=""><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="#"> <code class="privilege" style="background-color:#d79b1029; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+            <div class="ui icon top left pointing dropdown button">
+                <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup>3</sup>
+                <div class="menu">
+                    <div class="header">
+                        <i class="linkify icon"></i>
+                        Connection request
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <img class="ui avatar image" src="img/5.jpeg" alt="">
+                            Donatien Walker
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">1 week ago</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header">
+                        <i class="handshake outline icon"></i>
+                        Partnership request
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <img class="ui avatar image" src="img/2.png" alt="">
+                            Stephany Jwerio
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">1 min ago</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="header" style="font-weight: bold;">
+                        <i class="bookmark outline icon"></i>
+                        Project voted
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <i>Pushing Back the desert</i>
+                            <div>
+                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Events calendar-->
+            <div class="ui icon top left pointing dropdown button">
+                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
+                <div class="menu">
+                    <div class="header" style="font-weight: bold;">
+                        <i class="bookmark outline icon"></i>
+                        Events
+                    </div>
+                    <div class="scrolling menu">
+                        <a href="#" class="item" data-value="important">
+                            <i>No upcoming event</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="profile.html"><img class="ui avatar image" src="img/3.png"
+                    style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
+            <a href="premium.html"> <code class="privilege"
+                    style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
         </div>
     </div><br>
     <div class="ui container">
@@ -142,10 +203,10 @@
                                 <img class="ui avatar image" src="img/3.png" alt="" style="width: 48px; height:48px; border: 2px solid #FFFFFF;">
                                 <span style="position:relative; top:15px">User Name - <i style="font-weight: lighter; font-style:normal">12h ago</i></span>
                                 <a href="#" style="float:right; margin-top:25px"><span><i class="ui large black ellipsis horizontal icon"></i></span></a>
-                            </div>                                                            
+                            </div>
                             <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px;">Projet</a>
                             <h2>Project title</h2>
-                            <p style="font-family: Gudea; font-size: 16px; font-weight: lighter;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit optio quisquam est, perspiciatis cupiditate reiciendis corrupti inventore alias magni tempora natus hic neque impedit similique repellendus soluta, id voluptatibus.</p>
+                            <p style="font-family: Barlow; font-size: 16px; font-weight: lighter;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia odit optio quisquam est, perspiciatis cupiditate reiciendis corrupti inventore alias magni tempora natus hic neque impedit similique repellendus soluta, id voluptatibus.</p>
                             <div class="ui divider"></div>
                             <div class="ui container">
                                 <img class="ui image" src="img/it-room.jpeg" alt="">
@@ -175,13 +236,13 @@
                                     <a class="item">
                                         <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
                                         <div class="content">
-                                            <span class="header" style="font-family: Gudea;">Like</span>
+                                            <span class="header" style="font-family: Barlow;">Like</span>
                                         </div>
                                     </a>
                                     <a class="item">
                                         <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
                                         <div class="content">
-                                            <span class="header" style="font-family: Gudea;">Comment</span>
+                                            <span class="header" style="font-family: Barlow;">Comment</span>
                                         </div>
                                     </a>
                                     <a class="item">
