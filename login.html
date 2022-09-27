@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Login | InvestApp</title>
+    <title>Login | EntreHub</title>
+      <script type="module" src="./js/common.js"></script>
+    <script type="module" src="./js/login.js"></script>
 </head>
 <body>
     <header>
@@ -19,8 +21,10 @@
         <!--Section of login form-->
          <div class = "three column row">
             <div class="left floated column" id = "login-text">
-                <h2 style="font-weight: Bolder;">Connectez-vous</h2>
-                <h3 style="font-weight: lighter;">Bienvenue! C'est toujours un immense plaisir de vous compter parmi nos milliers d'abonnés</h3>
+                <h2 style="font-weight: Bolder;">Login</h2>
+                <h3 style="font-weight: lighter;">
+                    Join the world of Entrepreneurs and Investors and Share your ideas with the world.
+                </h3>
             </div>
             <div class="right floated column">
                 <form id="form-box" class="ui form" method="get" action="home.html">
@@ -28,29 +32,29 @@
                         <div class ="ui label" style = "background-color:#D79A10">
                             <i class ="ui standard at icon" style="color :#FFFFFF""></i>
                         </div>
-                        <input type="email" name="e-mail" placeholder="E-mail">
+                        <input type="email" id="email" name="e-mail" placeholder="E-mail">
                     </div>
                     <div class="ui labeled fluid input field">
                        <div class = "ui label" style = "background-color:#D79A10">
                             <i class = "ui standard lock icon" style="color :#FFFFFF""></i>
                        </div>
-                        <input type="password" name="passwd" placeholder="Mot de passe">
+                        <input type="password" id="password" name="passwd" placeholder="Mot de passe">
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
                             <input type="checkbox" name = "terms" tabindex="0">
-                            <label class ="terms" style ="color: #FFFFFF; font-size: 12px;">J'accepte les termes et conditions | <a href="#">Mot de passe oublié ?</a></label>                            
+                            <label class ="terms" style ="color: #FFFFFF; font-size: 12px;">I Accept the Terms and Conditions | <a href="#">Forgot Password?</a></label>                            
                         </div>
                     </div>
-                    <button class="ui fluid button" type="submit" id = "submit">Se connecter</button>
-                    <label style ="color: #FFFFFF; font-size: 12px;">Voulez-vous nous rejoindre ? <a href="signup.html">Inscrivez-vous ici</a></label>
+                    <button class="ui fluid button" type="submit" id = "submit">Login</button>
+                    <label style ="color: #FFFFFF; font-size: 12px;">Don't have an account ? <a href="signup.html">Sign Up</a></label>
                 </form>
             </div>
         </div>
     </section>
     <footer class="ui grid container">                            
         <div id="bottom-list" class="ui link list">
-            <span>Investapp <i class="ui copyright outline icon"></i>2022</span>
+            <span>EntreHub <i class="ui copyright outline icon"></i>2022</span>
             <a class="item">A propos</a>
             <a class = "item" href="#">Mentions légales</a>
             <a class="item">Confidentialité</a>

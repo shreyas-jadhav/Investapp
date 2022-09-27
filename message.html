@@ -1,248 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="css/message.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <title>Message | InvestApp</title>
-</head>
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="css/message.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Message | EntreHub</title>
+    <script type="module" src="./js/common.js"></script>
+  </head>
 
-<body>
+  <body>
     <!--Main navigation bar-->
-    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
-        <div class="" style="margin:auto;">
-            <img class="ui mini image" src="img/LOGO.svg"
-                style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />
+    <div
+      class="ui stackable four column grid"
+      style="background-color: rgb(236, 236, 236, 0.2); margin: auto"
+    >
+      <div class="" style="margin: auto">
+        <img
+          class="ui mini image"
+          src="img/LOGO.svg"
+          style="
+            width: 148px;
+            height: auto;
+            margin: auto;
+            margin-bottom: -40px;
+            margin-top: -20px;
+          "
+        />
+      </div>
+      <div class="column" style="margin: auto; margin-left: -180px">
+        <div class="ui icon input">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              border-radius: 50px;
+              width: 350px;
+              margin: auto;
+            "
+          />
+          <i class="search icon"></i>
         </div>
-        <div class="column" style="margin:auto; margin-left:-180px;">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search..."
-                    style="border:none; border-radius: 50px; width: 350px; margin:auto;">
-                <i class="search icon"></i>
+      </div>
+      <div class="column" style="margin: auto">
+        <div class="ui icon top left pointing dropdown button">
+          <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i
+          ><sup>3</sup>
+          <div class="menu">
+            <div class="header">
+              <i class="linkify icon"></i>
+              Connection request
             </div>
-        </div>
-        <div class="column" style="margin: auto;">
-            <div class="ui icon top left pointing dropdown button">
-                <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup>3</sup>
-                <div class="menu">
-                    <div class="header">
-                        <i class="linkify icon"></i>
-                        Connection request
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/5.jpeg" alt="">
-                            Donatien Walker
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 week ago</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="header">
-                        <i class="handshake outline icon"></i>
-                        Partnership request
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/2.png" alt="">
-                            Stephany Jwerio
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 min ago</span>
-                            </div>
-                        </a>
-                    </div>
-    
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Project voted
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <i>Pushing Back the desert</i>
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
-                            </div>
-                        </a>
-                    </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/5.jpeg" alt="" />
+                Donatien Walker
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 week ago</span
+                  >
                 </div>
+              </a>
             </div>
-            <!--Events calendar-->
-            <div class="ui icon top left pointing dropdown button">
-                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
-                <div class="menu">
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Events
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <i>No upcoming event</i>
-                        </a>
-                    </div>
+            <div class="header">
+              <i class="handshake outline icon"></i>
+              Partnership request
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/2.png" alt="" />
+                Stephany Jwerio
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 min ago</span
+                  >
                 </div>
+              </a>
             </div>
-            <a href="profile.html"><img class="ui avatar image" src="img/3.png"
-                    style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="premium.html"> <code class="privilege"
-                    style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Project voted
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>Pushing Back the desert</i>
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >2 days ago</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </div><br>
+        <!--Events calendar-->
+        <div class="ui icon top left pointing dropdown button">
+          <i
+            class="calendar outline blue icon"
+            onclick="$('.ui.dropdown').dropdown();"
+          ></i
+          ><sup></sup>
+          <div class="menu">
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Events
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>No upcoming event</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="profile.html"
+          ><img
+            class="ui avatar image"
+            src="img/3.png"
+            style="border: 2px solid #ffffff; height: 48px; width: 48px"
+        /></a>
+        |
+        <a href="premium.html">
+          <code
+            class="privilege"
+            style="
+              background-color: inherit;
+              border: 1px solid #d79a10;
+              color: #d79a10;
+            "
+            >Move to Premium <i class="icon ion-md-medal"></i></code
+        ></a>
+      </div>
+    </div>
+    <br />
 
     <!--Begining of timeline content-->
     <div class="ui container">
-        <section class="ui stackable three column grid">
-            <!----------------------------Left side timeline section------------------------------->
-            <div class="ui three wide sticky column">                
-                    <div class="ui fluid icon input">
-                        <input type="text" placeholder="Search in connections..." style="border-radius: 50px;">
-                        <i class="search icon"></i>
-                    </div>
-                <!--Connections suggestion-->
-                <div class="ui container">
-                    <h2 class="ui horizontal divider" style="text-transform:capitalize; ">
-                        Connections
-                    </h2>
-                </div>
-                <div class="ui middle aligned selection list">
-                    <div class="item">
-                        <img class="ui avatar image" src="img/1.png">
-                        <div class="content">
-                            <div class="header">Helen</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="ui avatar image" src="img/2.png">
-                        <div class="content">
-                            <div class="header">Christian</div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="ui avatar image" src="img/3.png">
-                        <div class="content">
-                            <div class="header">Daniel</div>
-                        </div>
-                    </div>
-                </div>
+      <section class="ui stackable three column grid">
+        <!----------------------------Left side timeline section------------------------------->
+        <div class="ui three wide sticky column">
+          <div class="ui fluid icon input">
+            <input
+              type="text"
+              placeholder="Search in connections..."
+              style="border-radius: 50px"
+            />
+            <i class="search icon"></i>
+          </div>
+          <!--Connections suggestion-->
+          <div class="ui container">
+            <h2
+              class="ui horizontal divider"
+              style="text-transform: capitalize"
+            >
+              Connections
+            </h2>
+          </div>
+          <div class="ui middle aligned selection list">
+            <div class="item">
+              <img class="ui avatar image" src="img/1.png" />
+              <div class="content">
+                <div class="header">Helen</div>
+              </div>
             </div>
-            <!----------------------------Message typing area-------------------------------------->
-            <div class="ten wide column">
-                <!-------------------Section Divide------------------------>
-                <div class="ui container">
-                    <h2 class="ui horizontal floated left divider" style="float:left; text-transform:lowercase; ">
-                        Sat, 2nd Nov. 2022
-                    </h2>
-                </div><br><br>
-                <div class="" style="overflow:auto; border:1px solid white; height:640px;">
-                   <div class="message-content">
-                        <div class="received">
-                                Hello, I'll make you proud. And I promise to be the best
-                        </div><br>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="sent">
-                                Hi my name is a new one. I want to make sure you'll be one of the last one to succeed this exam. I really rely on you so do not disapoint me please.
-                        </div>
-                        <div class="sent">
-                            Hi my name is a new one. I want to make sure you'll be one of the last one to succeed this exam. I really rely on
-                            you so do not disapoint me please.
-                        </div>
-                        <div class="sent">
-                            Hi my name is a new one. I want to make sure you'll be one of the last one to succeed this exam. I really rely on
-                            you so do not disapoint me please.
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                        <div class="received">
-                            Hello, I'll make you proud. And I promise to be the best Hello, I'll make you proud. And I promise to be the
-                            bestHello, I'll make you proud. And I promise to be the
-                        </div>
-                   </div>                    
-                </div> 
+            <div class="item">
+              <img class="ui avatar image" src="img/2.png" />
+              <div class="content">
+                <div class="header">Christian</div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="img/3.png" />
+              <div class="content">
+                <div class="header">Daniel</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!----------------------------Message typing area-------------------------------------->
+        <div class="ten wide column">
+          <!-------------------Section Divide------------------------>
+          <div class="ui container">
+            <h2
+              class="ui horizontal floated left divider"
+              style="float: left; text-transform: lowercase"
+            >
+              Sat, 2nd Nov. 2022
+            </h2>
+          </div>
+          <br /><br />
+          <div
+            class=""
+            style="overflow: auto; border: 1px solid white; height: 640px"
+          >
+            <div class="message-content">
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best
+              </div>
+              <br />
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="sent">
+                Hi my name is a new one. I want to make sure you'll be one of
+                the last one to succeed this exam. I really rely on you so do
+                not disapoint me please.
+              </div>
+              <div class="sent">
+                Hi my name is a new one. I want to make sure you'll be one of
+                the last one to succeed this exam. I really rely on you so do
+                not disapoint me please.
+              </div>
+              <div class="sent">
+                Hi my name is a new one. I want to make sure you'll be one of
+                the last one to succeed this exam. I really rely on you so do
+                not disapoint me please.
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+              <div class="received">
+                Hello, I'll make you proud. And I promise to be the best Hello,
+                I'll make you proud. And I promise to be the bestHello, I'll
+                make you proud. And I promise to be the
+              </div>
+            </div>
+          </div>
 
-                <div class="ui action input" style="width:720px; margin-top:auto; position:fixed; bottom: 0;">
-                    <input type="text" placeholder="Type your message here...">
-                    <button class="ui black button"><i class="ui send icon"></i></button>
-                </div>
-            </div>
-            <!-------------------------------Right side content---------------------------------------->
-            <div class="three wide sticky column">
-                <div class="ui medium rectangle ad">
-                    <img src="img/1.png" class="ui huge avatar image" alt="" style="height: 200px; width:200px">
-                </div>
+          <div
+            class="ui action input"
+            style="width: 720px; margin-top: auto; position: fixed; bottom: 0"
+          >
+            <input type="text" placeholder="Type your message here..." />
+            <button class="ui black button">
+              <i class="ui send icon"></i>
+            </button>
+          </div>
+        </div>
+        <!-------------------------------Right side content---------------------------------------->
+        <div class="three wide sticky column">
+          <div class="ui medium rectangle ad">
+            <img
+              src="img/1.png"
+              class="ui huge avatar image"
+              alt=""
+              style="height: 200px; width: 200px"
+            />
+          </div>
 
-                <!--End Ad-->
-                <div class="ui container">
-                    <h2 class="ui horizontal divider" style="text-transform:lowercase; ">
-                        Online connections
-                    </h2>
+          <!--End Ad-->
+          <div class="ui container">
+            <h2 class="ui horizontal divider" style="text-transform: lowercase">
+              Online connections
+            </h2>
+          </div>
+          <!--Online users-->
+          <div
+            class="ui very relaxed list"
+            style="border: 1px solid inherit; padding: 10px"
+          >
+            <div class="item">
+              <img class="ui avatar image" src="img/4.jpeg" />
+              <div class="content">
+                <a class="">Daniel Louise</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
                 </div>
-                <!--Online users-->
-                <div class="ui very relaxed list" style="border: 1px solid inherit; padding: 10px;">
-                    <div class="item">
-                        <img class="ui avatar image" src="img/4.jpeg">
-                        <div class="content">
-                            <a class="">Daniel Louise</a>
-                            <div class="description"><a style="color: green">Online</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="ui avatar image" src="img/5.jpeg">
-                        <div class="content">
-                            <a class="">Stevie Feliciano</a>
-                            <div class="description"><a style="color: green">Online</a></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img class="ui avatar image" src="img/user-girl.png">
-                        <div class="content">
-                            <a class="">Elliot Fu</a>
-                            <div class="description"><a style="color: green">Online</a></div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!--End online users-->
+              </div>
             </div>
-        </section>
+            <div class="item">
+              <img class="ui avatar image" src="img/5.jpeg" />
+              <div class="content">
+                <a class="">Stevie Feliciano</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="img/user-girl.png" />
+              <div class="content">
+                <a class="">Elliot Fu</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End online users-->
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>

@@ -1,502 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Fil d'actualité | InvestApp</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/common.js"></script>
+    <script src="./js/home.js" type="module"></script>
+    <title>Fil d'actualité | EntreHub</title>
+  </head>
+  <body>
     <!--Main navigation bar-->
-    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
-        <a href="" class="" style="margin:auto;">
-            <img class="ui mini image" src="img/LOGO.svg"
-                style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />
-        </a>
-        <div class="column" style="margin:auto; margin-left:-180px;">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search..."
-                    style="border:none; border-radius: 50px; width: 350px; margin:auto;">
-                <i class="search icon"></i>
-            </div>
+    <div
+      class="ui stackable four column grid"
+      style="background-color: rgb(236, 236, 236, 0.2); margin: auto"
+    >
+      <a href="" class="" style="margin: auto">
+        <img
+          class="ui mini image"
+          src="img/LOGO.svg"
+          style="
+            width: 148px;
+            height: auto;
+            margin: auto;
+            margin-bottom: -40px;
+            margin-top: -20px;
+          "
+        />
+      </a>
+      <div class="column" style="margin: auto; margin-left: -180px">
+        <div class="ui icon input">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              border-radius: 50px;
+              width: 350px;
+              margin: auto;
+            "
+          />
+          <i class="search icon"></i>
         </div>
-        <div class="column" style="margin: auto;">
-            <div class="ui icon top left pointing dropdown button">
-                <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup>3</sup>
-                <div class="menu">                    
-                    <div class="header">
-                        <i class="linkify icon"></i>
-                        Connection request
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/5.jpeg" alt="">
-                            Donatien Walker
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 week ago</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="header">
-                        <i class="handshake outline icon"></i>
-                        Partnership request                        
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/2.png" alt="">
-                            Stephany Jwerio
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 min ago</span>
-                            </div>
-                        </a>
-                    </div>
+      </div>
+      <div class="column" style="margin: auto">
+        <div class="ui icon top left pointing dropdown button">
+          <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i
+          ><sup>3</sup>
+          <div class="menu">
+            <div class="header">
+              <i class="linkify icon"></i>
+              Connection request
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/5.jpeg" alt="" />
+                Donatien Walker
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 week ago</span
+                  >
+                </div>
+              </a>
+            </div>
+            <div class="header">
+              <i class="handshake outline icon"></i>
+              Partnership request
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/2.png" alt="" />
+                Stephany Jwerio
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 min ago</span
+                  >
+                </div>
+              </a>
+            </div>
 
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Project voted
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">                            
-                            <i>Pushing Back the desert</i>
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> 
-            <!--Events calendar-->
-            <div class="ui icon top left pointing dropdown button">
-                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
-                <div class="menu">        
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Events
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <i>No upcoming event</i>
-                        </a>
-                    </div>
-                </div>
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Project voted
             </div>
-            <a href="profile.html"><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="premium.html"> <code class="privilege" style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>Pushing Back the desert</i>
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >2 days ago</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </div><br>
+        <!--Events calendar-->
+        <div class="ui icon top left pointing dropdown button">
+          <i
+            class="calendar outline blue icon"
+            onclick="$('.ui.dropdown').dropdown();"
+          ></i
+          ><sup></sup>
+          <div class="menu">
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Events
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>No upcoming event</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="profile.html"
+          ><img
+            class="ui avatar image"
+            src="img/3.png"
+            style="border: 2px solid #ffffff; height: 48px; width: 48px"
+        /></a>
+        |
+        <a href="premium.html">
+          <code
+            class="privilege"
+            style="
+              background-color: inherit;
+              border: 1px solid #d79a10;
+              color: #d79a10;
+            "
+            >Move to Premium <i class="icon ion-md-medal"></i></code
+        ></a>
+      </div>
+    </div>
+    <br />
 
     <!--Begining of timeline content-->
-   <div class="ui container">
-    <section class="ui stackable three column grid">
+    <div class="ui container">
+      <section class="ui stackable three column grid">
         <!----------------------------Left side timeline section------------------------------->
         <div class="ui three wide sticky column">
-            <div class="ui center aligned icon header"
-                style="height:auto; border: 1px solid inherit; border-radius:10px; background-color: rgb(236, 236, 236, .2); margin-top:20px; padding: 5px;">
-                <a href="profile.html"><img src="img/3.png" class="ui avatar image" style="width:48px; height:48px; border: 2px solid #FFFFFF; position: relative; bottom:45px; margin-top:20px; margin-bottom: -20px;" /></a>
-                <br><span style="font-size: 16px;">Auguste CIMORIEN</span><br>
-                <span style="font-weight:lighter; font-size: 14px;">Head of Dulu LTD</span>
-            </div>
-            <div class="ui list"
-                style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
-                <a class="item" href="profile.html">
-                    <i class="icon ion-md-person"></i>
-                    <div class="content">
-                        <div class="header">Profile</div>
-                        <div class="description">My profile
-                        </div>
-                    </div>
-                </a>
-                <div class="ui divider container"></div>
-                <a class="item" href="post.html">
-                    <i class="icon ion-md-create"></i>
-                    <div class="content">
-                        <div class="header">Posts</div>
-                        <div class="description">My posts
-                        </div>
-                    </div>
-                </a>
-                <div class="ui divider container"></div>
-                <a class="item" href="training.html">
-                    <i class="icon ion-md-school"></i>
-                    <div class="content">
-                        <div class="header">Trainings</div>
-                        <div class="description">Certified trainings
-                        </div>
-                    </div>
-                </a>
-                <div class="ui divider container"></div>
-                <a class="item" href="meeting.html">
-                    <i class="icon ion-md-tv"></i>
-                    <div class="content">
-                        <div class="header">Meeting</div>
-                        <div class="description">Partner encounter</div>
-                    </div>
-                </a>
-                <div class="ui divider container"></div>
-                <a class="item" href="message.html">
-                    <i class="icon ion-md-mail"></i>
-                    <div class="content">
-                        <div class="header">Message</div>
-                        <div class="description">Send a straight message</div>
-                    </div>
-                </a>
-                <div class="ui divider container"></div>
-                <a class="item" href="help.html">
-                <i class="help icon"></i>
-                <div class="content">
-                    <div class="header">Ask for Help</div>                    
+          <div
+            class="ui center aligned icon header"
+            style="
+              height: auto;
+              border: 1px solid inherit;
+              border-radius: 10px;
+              background-color: rgb(236, 236, 236, 0.2);
+              margin-top: 20px;
+              padding: 5px;
+            "
+          >
+            <a href="profile.html"
+              ><img
+                src="img/3.png"
+                class="ui avatar image"
+                style="
+                  width: 48px;
+                  height: 48px;
+                  border: 2px solid #ffffff;
+                  position: relative;
+                  bottom: 45px;
+                  margin-top: 20px;
+                  margin-bottom: -20px;
+                "
+            /></a>
+            <br /><span style="font-size: 16px" class="nameDisplay"></span
+            ><br />
+            <span style="font-weight: lighter; font-size: 14px"
+              >Entrepreneur</span
+            >
+          </div>
+          <div
+            class="ui list"
+            style="
+              border: 1px solid inherit;
+              background-color: rgb(236, 236, 236, 0.2);
+              border-radius: 10px;
+              padding: 10px;
+            "
+          >
+            <a class="item" href="profile.html">
+              <i class="icon ion-md-person"></i>
+              <div class="content">
+                <div class="header">Profile</div>
+                <div class="description">My profile</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="post.html">
+              <i class="icon ion-md-create"></i>
+              <div class="content">
+                <div class="header">Products</div>
+                <div class="description">My Products</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="forum.html">
+              <i class="icon ion-md-school"></i>
+              <div class="content">
+                <div class="header">Forums</div>
+                <div class="description">Forums</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="meeting.html">
+              <i class="icon ion-md-tv"></i>
+              <div class="content">
+                <div class="header">Meeting</div>
+                <div class="description">Partner encounter</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="message.html">
+              <i class="icon ion-md-mail"></i>
+              <div class="content">
+                <div class="header">Message</div>
+                <div class="description">Send a straight message</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="help.html">
+              <i class="help icon"></i>
+              <div class="content">
+                <div class="header">Ask for Help</div>
+              </div>
+            </a>
+          </div>
+          <!--Connections suggestion-->
+          <div class="ui container">
+            <h2
+              class="ui horizontal divider"
+              style="text-transform: capitalize"
+            >
+              Online connections
+            </h2>
+          </div>
+          <div
+            class="ui very relaxed list"
+            style="border: 1px solid inherit; padding: 10px"
+          >
+            <div class="item">
+              <img class="ui avatar image" src="img/4.jpeg" />
+              <div class="content">
+                <a href="#" class="">Daniel Louise</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
                 </div>
-                </a>
+              </div>
             </div>
-            <!--Connections suggestion-->
-            <div class="ui container">
-                <h2 class="ui horizontal divider" style="text-transform:capitalize;">
-                    Online connections
-                </h2>
+            <div class="item">
+              <img class="ui avatar image" src="img/5.jpeg" />
+              <div class="content">
+                <a href="#" class="">Stevie Feliciano</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
+                </div>
+              </div>
             </div>
-            <div class="ui very relaxed list" style="border: 1px solid inherit; padding: 10px;">
-                <div class="item">
-                    <img class="ui avatar image" src="img/4.jpeg">
-                    <div class="content">
-                        <a href ="#" class="">Daniel Louise</a>
-                        <div class="description"><a style="color: green">Online</a></div>
-                    </div>
+            <div class="item">
+              <img class="ui avatar image" src="img/user-girl.png" />
+              <div class="content">
+                <a href="#" class="">Elliot Fu</a>
+                <div class="description">
+                  <a style="color: green">Online</a>
                 </div>
-                <div class="item">
-                    <img class="ui avatar image" src="img/5.jpeg">
-                    <div class="content">
-                        <a href="#" class="">Stevie Feliciano</a>
-                        <div class="description"><a style="color: green">Online</a></div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="ui avatar image" src="img/user-girl.png">
-                    <div class="content">
-                        <a href="#" class="">Elliot Fu</a>
-                        <div class="description"><a style="color: green">Online</a></div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
         <!----------------------------Timeline typing area-------------------------------------->
         <div class="nine wide column">
-            <div class="ui container" style="border:1px solid inherit; height: 160px; border-radius:10px; background-color:rgb(236, 236, 236, .2);">
-                <div class="ui fluid labeled input" style="border-radius:50px; padding: 15px;">
-                   <a href="profile.html"><img class="ui avatar image" src="img/3.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
-                <input onclick="alert(prompt('Propulser votre idée ici ...'))" type="text" placeholder="Propulsez votre idée !" readonly="readonly" style="border:none; border-radius:0px 50px 50px 0px; cursor:pointer; background-color:#FFFFFF;">
-                </div>
-                <div class="ui grid container">
-                    <div class="three column row" style="margin-left:100px;">
-                        <div class="column">
-                            <a class="ui link" href="#" style="color:#2c2b2bc8;"><i class="icon ion-md-images"
-                            style="font-size: 40px; color: #108ed7;"></i><br>Picture</a>
-                        </div>
-                        <div class="column">
-                            <a class="ui link" href="#" style="color:#2c2b2bc8;"><i class="icon ion-md-videocam"
-                            style="font-size: 40px; color: rgba(50, 95, 1, 0.666);"></i><br>Video</a>
-                        </div>
-                        <div class="column">
-                            <a class="ui link" href="#" style="font-size: 14px; color: #2c2b2bc8;"><i
-                            class="icon ion-md-attach"
-                            style="font-size: 40px; color: rgba(19, 19, 19, 0.627);"></i><br>Attached</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-------------------Section Divide------------------------>
-            <div class="ui container"> 
-                <h2 class="ui horizontal floated left divider" style="float:left; text-transform:lowercase; ">
-                    Fil d'actualité
-                </h2>
-            </div><br><br>
-            <!--Timeline posts-->
-            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
-                <div class="header" style="padding:15px">
-                    <div class="header" style="height:60px;">                      
-                            <a href="{{ user.profile }}"><img class="ui avatar image" src="img/7.png" style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
-                            <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Julie Ella</span></a><br>                            
-                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Gwarveal Accounter</span></a><br>
-                            <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1h ago</span></a>                            
-                    </div>                    
-                </div>
-                <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
-                <div class="ui divider container"></div>
-                <div class="invest-post" style="padding:15px">
-                    <div class="text-area">
-                        <h3>Opportunity in subasharian Africa</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam pariatur distinctio!</p>
-                        <div class="img-video-area">
-                            <img class="ui big image" src="img/business.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                    <!--Reaction on the post-->
-                    <div class="ui grid container">
-                       <div class="three column grid">
-                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
-                                <div class="item">
-                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span style="font-size:14px; color: #088728;">5k</span></i></a>
-                                </div>
-                                <div class="item">                                    
-                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span style="font-size:14px; color: #D79A10;">12k</span></i></a>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                       <div class="ui stackable four column grid">
-                            <div id = "" class="ui very relaxed horizontal list" style="margin:auto; padding: 10px;">
-                                <a class="item">
-                                    <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
-                                    <div class="content">
-                                        <span class="header" style="font-family: Barlow;">Like</span>
-                                    </div>
-                                </a>
-                                <a class="item">
-                                    <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
-                                    <div class="content">
-                                        <span class="header" style="font-family: Barlow;">Comment</span>
-                                    </div>
-                                </a>
-                                <a class="item">
-                                    <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
-                                    <div class="content">
-                                        <span class="header" style="font-family: Barlow;">Share</span>
-                                    </div>
-                                </a>
-                                <div class="item">
-                                    <div class="content">
-                                        <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Barlow;">Apply</a>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
-                </div>
-            </div><br>
-                <!--Timeline 2-->
-            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
-                <div class="header" style="padding:15px">
-                    <div class="header" style="height:60px;">
-                        <a href="{{ user.profile }}"><img class="ui avatar image" src="img/user-girl2.png"
-                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a>
-                        <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">TE Maimouna</span></a><br>
-                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrpreneur</span></a><br>
-                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 month ago</span></a>
-                    </div>                   
-                </div>
-                <a class="ui orange right ribbon label" style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
-                <div class="ui divider container"></div>
-                <div class="invest-post" style="padding:15px">
-                    <div class="text-area">
-                        <h3>Water supply in desertic countries</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit
-                            tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam
-                            pariatur distinctio!</p>
-                        <div class="ui container">
-                            <video style="width:100%; height:100%" controls>
-                                <source src="img/water.mp4" type="video/mp4">
-                                <source src="img/water.ogg" type="video/ogg">
-                                Your browser does not support the video tag
-                            </video>
-                        </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                    <!--Reaction on the post-->
-                    <div class="ui grid container">
-                        <div class="three column grid">
-                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
-                                <div class="item">
-                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span
-                                                style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span
-                                                style="font-size:14px; color: #088728;">5k</span></i></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span
-                                                style="font-size:14px; color: #D79A10;">12k</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                    <div class="ui stackable four column grid">
-                        <div class="ui very relaxed horizontal list" style="margin:auto;" style="border-radius:0px;">
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Like</span>
-                                </div>
-                            </a>
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Comment</span>
-                                </div>
-                            </a>
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Share</span>
-                                </div>
-                            </a>
-                            <div class="item">
-                                <div class="content">
-                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Barlow;">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><br>
-            <!--Timeline 3-->
-            <div class="ui container" id="timeline_post" style="background:rgb(236, 236, 236, .2); border-radius:10px;">
-                <div class="header" style="padding:15px">
-                    <div class="header" style="height:60px;">
-                        <img class="ui avatar image" src="img/user-man3.png"
-                            style="border:2px solid #FFFFFF; height: 48px; width: 48px;" />
-                        <a href="#"><span style="position:relative; bottom:15px; left:5px; font-weight: bolder; color:#000">Gregoire Anthony</span></a><br>
-                        <a href="#"><span
-                                style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">Entrepreneur</span></a><br>
-                        <a href="#"><span style="position:relative; bottom:30px; left:60px; font-weight: lighter; color:#000">1 week ago</span></a>
-                    </div>                    
-                </div>
-                <a class="ui orange right ribbon label"
-                    style="border-radius:15px 0 0 15px; position:relative; bottom: 70px; margin-left:-15px">Projet</a>
-                <div class="ui divider container"></div>
-                <div class="invest-post" style="padding:15px">
-                    <div class="text-area">
-                        <h3>Moving sidewalk</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque optio doloremque provident impedit
-                            tenetur at maxime voluptate ratione sed obcaecati? Ad excepturi porro quo eos nam consequatur laboriosam
-                            pariatur distinctio!</p>
-                        <div class="ui container">
-                            <video style="width:100%; height:100%" controls>
-                                <source src="img/walkside.mp4" type="video/mp4">
-                                <source src="img/walkside.ogg" type="video/ogg">
-                                Your browser does not support the video tag
-                            </video>
-                        </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                    <!--Reaction on the post-->
-                    <div class="ui grid container">
-                        <div class="three column grid">
-                            <div class="ui relaxed horizontal list" style="margin-left:auto;">
-                                <div class="item">
-                                    <a href="#"><i class="ui blue thumbs up icon" style="color: #108ed7;"><span
-                                                style="font-size:14px; color: #108ed7;"> 50k</span></i></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><i class="icon ion-md-text" style="color: #088728;"><span
-                                                style="font-size:14px; color: #088728;">5k</span></i></a>
-                                </div>
-                                <div class="item">
-                                    <a href="#"><i class="icon ion-md-share" style="color: #D79A10;"><span
-                                                style="font-size:14px; color: #D79A10;">12k</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui divider container"></div>
-                    <div class="ui stackable four column grid">
-                        <div class="ui very relaxed horizontal list" style="margin:auto;">
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/like.png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Like</span>
-                                </div>
-                            </a>
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/comment (1).png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Comment</span>
-                                </div>
-                            </a>
-                            <a class="item">
-                                <img class="ui avatar image" src="emoji/share.png" style="border-radius:0px;">
-                                <div class="content">
-                                    <span class="header" style="font-family: Barlow;">Share</span>
-                                </div>
-                            </a>
-                            <div class="item">
-                                <div class="content">
-                                    <a href="#" class="ui button" style="background-color:#10d75229; color:#088728; font-family: Gudea;">Apply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <a href="./post.html">
+            <button class="ui button" style="margin-bottom: 50px">
+              <i class="icon ion-md-add"></i>
+              Post My Product
+            </button>
+          </a>
+          <!--Timeline posts-->
+          <div id="products-list"></div>
         </div>
         <!-------------------------------Right side timeline content---------------------------------------->
         <div class="four wide sticky column">
-            <!--Ad space-->
-            
-                <div class="ui medium rectangle ad">
-                     <img src="img/pub.jpeg"  class="ui fluid image"  alt="">
-                  <ins class="adsbygoogle"
-                       style="display:inline-block;width:300px;height:250px"
-                       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                       data-ad-slot="XXXXXXXXXX"></ins>
-                  <script>
-                  (adsbygoogle = window.adsbygoogle || []).push({});
-                  </script>
-                  
+          <!--Ad space-->
+
+          <div class="ui medium rectangle ad">
+            <img src="img/pub.jpeg" class="ui fluid image" alt="" />
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 300px; height: 250px"
+              data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+              data-ad-slot="XXXXXXXXXX"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+
+          <!--End Ad-->
+          <div class="ui container">
+            <h2
+              class="ui horizontal divider"
+              style="text-transform: capitalize"
+            >
+              Connection Suggestions
+            </h2>
+          </div>
+          <!--Online users-->
+          <div class="ui middle aligned selection list">
+            <div class="item">
+              <img class="ui avatar image" src="img/1.png" />
+              <div class="content">
+                <a class="">Daniel Louise</a>
+                <span class="description">CEO Green pigens</span>
+                <div class="description">
+                  <button
+                    class="ui tiny primary basic button"
+                    style="margin-top: 10px"
+                  >
+                    Connect
+                  </button>
                 </div>
-            
-            <!--End Ad-->
-            <div class="ui container">
-                <h2 class="ui horizontal divider" style="text-transform:capitalize; ">
-                    Connection Suggestions
-                </h2>
+              </div>
             </div>
-            <!--Online users-->
-            <div class="ui middle aligned selection list">
-                <div class="item">
-                    <img class="ui avatar image" src="img/1.png">
-                    <div class="content">
-                        <a class="">Daniel Louise</a>
-                        <span class="description">CEO Green pigens</span>
-                        <div class="description"><button class="ui tiny primary basic button"
-                                style="margin-top:10px">Connect</button></div>
-                    </div>
+            <div class="item">
+              <img class="ui avatar image" src="img/2.png" />
+              <div class="content">
+                <a class="">Dylane EBANG</a>
+                <span class="description">CEO at Gwarev</span>
+                <div class="description">
+                  <button
+                    class="ui tiny primary basic button"
+                    style="margin-top: 10px"
+                  >
+                    Connect
+                  </button>
                 </div>
-                <div class="item">
-                    <img class="ui avatar image" src="img/2.png">
-                    <div class="content">
-                        <a class="">Dylane EBANG</a>
-                        <span class="description">CEO at Gwarev</span>
-                        <div class="description"><button class="ui tiny primary basic button"
-                                style="margin-top:10px">Connect</button>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="item">
+              <img class="ui avatar image" src="img/3.png" />
+              <div class="content">
+                <a class="">Christine FAB</a>
+                <span class="description">H.Master NGO Angouet</span>
+                <div class="description">
+                  <button
+                    class="ui tiny primary basic button"
+                    style="margin-top: 10px"
+                  >
+                    Connect
+                  </button>
                 </div>
-                <div class="item">
-                    <img class="ui avatar image" src="img/3.png">
-                    <div class="content">
-                        <a class="">Christine FAB</a>
-                        <span class="description">H.Master NGO Angouet</span>
-                        <div class="description"><button class="ui tiny primary basic button"
-                                style="margin-top:10px">Connect</button>
-                        </div>
-                    </div>
-                </div>
-            </div>                        
-            <!--End online users-->
+              </div>
+            </div>
+          </div>
+          <!--End online users-->
         </div>
-    </section>
-   </div>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-</body>
+  </body>
 </html>

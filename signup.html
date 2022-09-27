@@ -1,121 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="css/signup.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <title>Sign up | InvestApp</title>
-</head>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="css/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <base href="/" />
+    <script type="module" src="js/signup.js"></script>
+    <script type="module" src="./js/common.js"></script>
+    <title>Sign up | EntreHub</title>
+  </head>
+
+  <body>
     <header>
-        <div class="ui grid" style="margin-top:10px; margin-left: 10px">
-            <img class="ui small image" src="img/logo1.svg" alt="" style="position:absolute">
-        </div>
+      <div class="ui grid" style="margin-top: 10px; margin-left: 10px">
+        <img
+          class="ui small image"
+          src="img/logo1.svg"
+          alt=""
+          style="position: absolute"
+        />
+      </div>
     </header>
     <section id="login-form2" class="ui grid container">
-        <!--Section of login form-->
-        <div class="three column row">
-            <div class="left floated column" id="login-text2">
-                <h2 style="font-weight: Bolder;">Inscrivez-vous...</h2>
-                <h3 style="font-weight: lighter;">... Et découvrez comment faire propulser votre idée de business en rencontrant de potentiels investisseurs et partenaires InvestApp</h3>
-            </div>
-            <div class="right floated column">
-                <form id="form-box2" class="ui form" method="get" action="login.html">
-                    <div class="two fields">
-                        <div class="field">
-                            <input type="text" name="firstname" placeholder="Prénom">
-                        </div>
-                        <div class="field">
-                            <input type="text" name="name" placeholder="Nom de famille">
-                        </div>
-                    </div>
-                    <div class="ui labeled fluid input field">
-                        <div class = "ui label" style = "background-color:#D79A10; color :#FFFFFF">
-                            <i class="ui at icon"></i>
-                        </div>
-                        <input type="email" name="email" placeholder="E-mail">
-                    </div>
-                    <div class="ui labeled fluid input field">
-                        <div class = "ui label" style = "background-color:#D79A10; color:#FFFFFF">
-                            +241
-                        </div>
-                        <input type="number" name="telephone" placeholder="Telephone">
-                    </div>
-                    <div class="ui labeled fluid input field">
-                        <div class = "ui label" style = "background-color:#D79A10">
-                            <i class = "ui lock icon" style = "color:#FFFFFF"></i>
-                        </div>
-                        <input type="password" name="password" placeholder="Mot de passe">
-                    </div>
-                    <div class="two fields">
-                        <div class = "field">
-                            <input type="date" name="birthday" placeholder="Date de naissance">
-                        </div>                        
-                        <div class = "field">
-                            <input type="text" name="birthplace" placeholder="Lieu de naissance">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="inline fields">
-                            <label for="genre" style = "color:#FFFFFF">Choisir votre genre:</label>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="genre" tabindex="0">
-                                    <label style = "color:#FFFFFF">Homme</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui radio checkbox">
-                                    <input type="radio" name="genre" tabindex="0">
-                                    <label style = "color:#FFFFFF">Femme</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui checkbox">
-                            <input type="checkbox" name="terms" tabindex="0">
-                            <label style = "color :#FFFFFF; font-size: 12px;">J'accepte les Termes et Conditions</label>
-                        </div>
-                    </div>
-                    <button class="ui fluid button" type="submit" id ="submit2">S'inscrire</button>
-                    <label style="margin:auto; font-size: 12px; margin: auto;">Dèjà enregistré ? <a href="login.html">Connectez-vous ici</a></label>
-                </form>
-            </div>
+      <!--Section of login form-->
+      <div class="three column row">
+        <div class="left floated column" id="login-text2">
+          <h2 style="font-weight: Bolder">Welcome...</h2>
+          <h3 style="font-weight: lighter">
+            ... Sign Up and Join the network of Entrepreneurs and Investors and
+            Share your ideas!
+          </h3>
         </div>
+        <div class="right floated column">
+          <form id="form-box2" class="ui form" method="get" action="login.html">
+            <div class="two fields">
+              <div class="field">
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="ui labeled fluid input field">
+              <div
+                class="ui label"
+                style="background-color: #d79a10; color: #ffffff"
+              >
+                <i class="ui at icon"></i>
+              </div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <div class="ui labeled fluid input field">
+              <div class="ui label" style="background-color: #d79a10">
+                <i class="ui lock icon" style="color: #ffffff"></i>
+              </div>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="field">
+              <div class="ui checkbox">
+                <input type="checkbox" name="terms" tabindex="0" />
+                <label style="color: #ffffff; font-size: 12px"
+                  >I Accept the Terms and Conditions</label
+                >
+              </div>
+            </div>
+            <button class="ui fluid button" type="submit" id="submit2">
+              Sign Up
+            </button>
+            <label style="margin: auto; font-size: 12px; margin: auto"
+              >Already have an Account ? <a href="login.html">Login</a></label
+            >
+          </form>
+        </div>
+      </div>
     </section>
     <footer class="ui grid container">
-        <div id="bottom-list2" class="ui link list">
-            <span>Investapp <i class="ui copyright outline icon"></i>2022</span>
-            <a class="item">A propos</a>
-            <a class="item" href="#">Mentions légales</a>
-            <a class="item">Confidentialité</a>
-            <a class="item">Conditions générales d'utilisation</a>
-            <a class="item">Politique relative aux cookies</a>
-            <!-- <a class="item">Sign up</a>>-->
-            <a class="item">Sign up</a>
-            <div class="ui mini floating dropdown labeled search icon button">
-                <i class="world icon" onclick="$('.ui.dropdown').dropdown();"></i>
-                <span onclick="$('.ui.dropdown').dropdown();" class="text"></span>
-                <div class="menu">
-                    <div class="item">French</div>
-                    <div class="item">English</div>
-                </div>
-            </div>
+      <div id="bottom-list2" class="ui link list">
+        <span>EntreHub <i class="ui copyright outline icon"></i>2022</span>
+        <a class="item">A propos</a>
+        <a class="item" href="#">Mentions légales</a>
+        <a class="item">Confidentialité</a>
+        <a class="item">Conditions générales d'utilisation</a>
+        <a class="item">Politique relative aux cookies</a>
+        <!-- <a class="item">Sign up</a>>-->
+        <a class="item">Sign up</a>
+        <div class="ui mini floating dropdown labeled search icon button">
+          <i class="world icon" onclick="$('.ui.dropdown').dropdown();"></i>
+          <span onclick="$('.ui.dropdown').dropdown();" class="text"></span>
+          <div class="menu">
+            <div class="item">French</div>
+            <div class="item">English</div>
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-</body>
-
+  </body>
 </html>

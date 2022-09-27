@@ -1,300 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="css/meeting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./js/common.js"></script>
+    <title>Meeting | EntreHub</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-    <link rel="stylesheet" href="css/meeting.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Barlow:wght@100;200;300;400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Meeting | InvestApp</title>
-</head>
-
-<body>
+  <body>
     <!--Main navigation bar-->
-    <div class="ui stackable four column grid" style="background-color: rgb(236, 236, 236, .2); margin: auto;">
-        <div class="" style="margin:auto;">
-            <img class="ui mini image" src="img/LOGO.svg"
-                style="width:148px; height:auto; margin: auto; margin-bottom:-40px; margin-top: -20px;" />
+    <div
+      class="ui stackable four column grid"
+      style="background-color: rgb(236, 236, 236, 0.2); margin: auto"
+    >
+      <div class="" style="margin: auto">
+        <img
+          class="ui mini image"
+          src="img/LOGO.svg"
+          style="
+            width: 148px;
+            height: auto;
+            margin: auto;
+            margin-bottom: -40px;
+            margin-top: -20px;
+          "
+        />
+      </div>
+      <div class="column" style="margin: auto; margin-left: -180px">
+        <div class="ui icon input">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              border-radius: 50px;
+              width: 350px;
+              margin: auto;
+            "
+          />
+          <i class="search icon"></i>
         </div>
-        <div class="column" style="margin:auto; margin-left:-180px;">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search..."
-                    style="border:none; border-radius: 50px; width: 350px; margin:auto;">
-                <i class="search icon"></i>
+      </div>
+      <div class="column" style="margin: auto">
+        <div class="ui icon top left pointing dropdown button">
+          <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i
+          ><sup>3</sup>
+          <div class="menu">
+            <div class="header">
+              <i class="linkify icon"></i>
+              Connection request
             </div>
-        </div>
-        <div class="column" style="margin: auto;">
-            <div class="ui icon top left pointing dropdown button">
-                <i class="bell green icon" onclick="$('.ui.dropdown').dropdown();"></i><sup>3</sup>
-                <div class="menu">
-                    <div class="header">
-                        <i class="linkify icon"></i>
-                        Connection request
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/5.jpeg" alt="">
-                            Donatien Walker
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 week ago</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="header">
-                        <i class="handshake outline icon"></i>
-                        Partnership request
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <img class="ui avatar image" src="img/2.png" alt="">
-                            Stephany Jwerio
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">1 min ago</span>
-                            </div>
-                        </a>
-                    </div>
-    
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Project voted
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <i>Pushing Back the desert</i>
-                            <div>
-                                <span style="margin-left:50%; color:#409d57">2 days ago</span>
-                            </div>
-                        </a>
-                    </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/5.jpeg" alt="" />
+                Donatien Walker
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 week ago</span
+                  >
                 </div>
+              </a>
             </div>
-            <!--Events calendar-->
-            <div class="ui icon top left pointing dropdown button">
-                <i class="calendar outline blue icon" onclick="$('.ui.dropdown').dropdown();"></i><sup></sup>
-                <div class="menu">
-                    <div class="header" style="font-weight: bold;">
-                        <i class="bookmark outline icon"></i>
-                        Events
-                    </div>
-                    <div class="scrolling menu">
-                        <a href="#" class="item" data-value="important">
-                            <i>No upcoming event</i>
-                        </a>
-                    </div>
-                </div>
+            <div class="header">
+              <i class="handshake outline icon"></i>
+              Partnership request
             </div>
-            <a href="profile.html"><img class="ui avatar image" src="img/3.png"
-                    style="border:2px solid #FFFFFF; height: 48px; width: 48px;" /></a> |
-            <a href="premium.html"> <code class="privilege"
-                    style="background-color:inherit; border:1px solid #D79A10; color:#D79A10;">Move to Premium <i class="icon ion-md-medal"></i></code></a>
-        </div>
-    </div><br>
-    <div class="ui container">
-        <section class="ui stackable three column grid">
-            <!----------------------------Left side timeline section------------------------------->
-            <div class="ui three wide sticky column">
-                <div class="ui center aligned icon header"
-                    style="height:auto; border: 1px solid inherit; border-radius:10px; background-color: rgb(236, 236, 236, .2); margin-top:20px; padding: 5px;">
-                    <a href="#"><img src="img/3.png" class="ui avatar image"
-                            style="width:48px; height:48px; border: 2px solid #FFFFFF; position: relative; bottom:45px; margin-top:20px; margin-bottom: -20px;" /></a>
-                    <br><span style="font-size: 16px;">Auguste CIMORIEN</span><br>
-                    <span style="font-weight:lighter; font-size: 14px;">Head of Dulu LTD</span>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <img class="ui avatar image" src="img/2.png" alt="" />
+                Stephany Jwerio
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >1 min ago</span
+                  >
                 </div>
-                <div class="ui list"
-                    style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
-                    <a class="item">
-                        <i class="icon ion-md-person"></i>
-                        <div class="content">
-                            <div class="header">Profile</div>
-                            <div class="description">My profile
-                            </div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-create"></i>
-                        <div class="content">
-                            <div class="header">Posts</div>
-                            <div class="description">My posts
-                            </div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-school"></i>
-                        <div class="content">
-                            <div class="header">Trainings</div>
-                            <div class="description">Certified trainings
-                            </div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-tv"></i>
-                        <div class="content">
-                            <div class="header">Meeting</div>
-                            <div class="description">Partner encounter</div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-mail"></i>
-                        <div class="content">
-                            <div class="header">Message</div>
-                            <div class="description">Send a straight message</div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <div class="item" style="cursor:help ;">
-                        <i class="help icon"></i>
-                        Ask for help
-                    </div>
-                </div>
-                <!--Statistics-->
-                <div class="ui container">
-                    <h2 class="ui horizontal divider" style="text-transform:lowercase; ">
-                        Statistics
-                    </h2>
-                </div>
-                <div class="ui list"
-                    style="border: 1px solid inherit;background-color: rgb(236, 236, 236, .2); border-radius: 10px; padding: 10px;">
-                    <a class="item">
-                        <i class="icon ion-md-people"></i>
-                        <div class="content">
-                            <div class="header">Netwok</div>
-                            <div class="description">My connections
-                            </div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-construct"></i>
-                        <div class="content">
-                            <div class="header">Projects</div>
-                            <div class="description">Voted project
-                            </div>
-                        </div>
-                    </a>
-                    <div class="ui divider container"></div>
-                    <a class="item">
-                        <i class="icon ion-md-person"></i>
-                        <div class="content">
-                            <div class="header">Interactions</div>
-                            <div class="description">Profile views
-                            </div>
-                        </div>
-                    </a>
-                </div>
+              </a>
             </div>
-            <!----------------------------All usesr's posts-------------------------------------->
-            <div class="thirteen wide column">
-                <div class="ui container">
-                    <div class="">
-                        <h4>Partner meeting</h4>
-                        <div class="ui divider"></div><br>
-                        <p style="font-size:35px; font-weight:100;">Collaborate in a meeting makes business more reliable and pratical! </p>
-                        <div class="">
-                            <button id="new-meeting" class="ui huge button" style="font-weight:lighte;"><span>Schedule a new meeting</span></button>                            
-                        </div>
-                        <div class="ui container">
-                            <h2 class="ui horizontal divider" style="text-transform:initial">
-                                Ongoin meetings
-                            </h2>
-                        </div>
-                    </div><br>
-                    <!--Starting posts-->
-                    <div class="ui three column grid">
-                        <div class="column">
-                            <div class="layout">
-                                <div class="meet title"><h4>Starts on 10<sup>th</sup> May 22, 8h:00 PM</h4></div><br>
-                                <div class="meet content">
-                                    <ul class="ui list">
-                                        <div clas="item"><b><i class="icon ion-md-paper" style="color:green;"></i>Theme :</b> Reorganize InvestApp</div>
-                                        <div><b><i class="icon ion-md-person" style="color:rgb(62, 171, 244)"></i>Speaker :</b> Gill Gates</div>
-                                        <div><b><i class="icon ion-md-hourglass" style="color:orange;"></i>Duration :</b> 2h</div>
-                                        <div><b><i class="icon ion-md-square" style="color:rgb(126, 4, 4);"></i>Ends :</b> 10:00 PM</div>
-                                    </ul>
-                                    <div class="meet btn">
-                                        <button class="ui fluid small button">Meet partners</button>
-                                    </div>
-                                </div>
-                                <div class="ui divider"></div>
-                                <div class="meet subscribed">
-                                    <p>These partners have already joined it</p>
-                                    <a href="#"><img class="ui avatar image" src="img/1.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/2.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/3.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/7.png" alt=""></a>
-                                    <a href="#">more +</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                        <div class="layout">
-                            <div class="meet title">
-                                <h4>Starts on 03<sup>st</sup> Dec 22, 8h:00 PM</h4>
-                            </div><br>
-                            <div class="meet content">
-                                <ul class="ui list">
-                                    <div class="item"><b><i class="icon ion-md-paper" style="color:green;"></i>Theme :</b> Impact in business</div>
-                                    <div class="item"><b><i class="icon ion-md-person" style="color:rgb(62, 171, 244)"></i>Speaker :</b> Marthe Simba</div>
-                                    <div class="item"><b><i class="icon ion-md-hourglass" style="color:orange;"></i>Duration :</b> 2h</div>
-                                    <div class="item"><b><i class="icon ion-md-square" style="color:rgb(126, 4, 4);"></i>Ends :</b> 10:00 PM</div>
-                                </ul>
-                                <div class="meet btn">
-                                    <button class="ui fluid small button">Meet partners</button>
-                                </div>
-                            </div>
-                            <div class="ui divider"></div>
-                            <div class="meet subscribed">
-                                <p>These partners have already joined it</p>
-                                <a href="#"><img class="ui avatar image" src="img/1.png" alt=""></a>
-                                <a href="#"><img class="ui avatar image" src="img/2.png" alt=""></a>
-                                <a href="#"><img class="ui avatar image" src="img/3.png" alt=""></a>
-                                <a href="#"><img class="ui avatar image" src="img/7.png" alt=""></a>
-                                <a href="#">more +</a>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="column">
-                            <div class="layout">
-                                <div class="meet title">
-                                    <h4 style="font-weight:bolder;">Starts on 21<sup>st</sup> Aug 22, 8:00 PM</h4>
-                                </div><br>
-                                <div class="meet content">
-                                    <ul class="ui list">
-                                        <div class="item"><b><i class="icon ion-md-paper" style="color:green;"></i>Theme :</b> Invest in Africa </div>
-                                        <div class="item"><b><i class="icon ion-md-person" style="color:rgb(62, 171, 244)"></i>Speaker :</b> Jules Brown</div>
-                                        <div class="item"><b><i class="icon ion-md-hourglass" style="color:orange;"></i>Duration :</b> 2h</div>
-                                        <div class="item"><b><i class="icon ion-md-square" style="color:rgb(126, 4, 4);"></i>Ends :</b> 10:00 PM</div>
-                                    </ul>
-                                    <div class="meet btn">
-                                        <button class="ui fluid small button">Meet partners</button>
-                                    </div>
-                                </div>
-                                <div class="ui divider"></div>
-                                <div class="meet subscribed">
-                                    <p>These partners have already joined it</p>
-                                    <a href="#"><img class="ui avatar image" src="img/1.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/2.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/3.png" alt=""></a>
-                                    <a href="#"><img class="ui avatar image" src="img/7.png" alt=""></a>
-                                    <a href="#">more +</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-</body>
 
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Project voted
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>Pushing Back the desert</i>
+                <div>
+                  <span style="margin-left: 50%; color: #409d57"
+                    >2 days ago</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--Events calendar-->
+        <div class="ui icon top left pointing dropdown button">
+          <i
+            class="calendar outline blue icon"
+            onclick="$('.ui.dropdown').dropdown();"
+          ></i
+          ><sup></sup>
+          <div class="menu">
+            <div class="header" style="font-weight: bold">
+              <i class="bookmark outline icon"></i>
+              Events
+            </div>
+            <div class="scrolling menu">
+              <a href="#" class="item" data-value="important">
+                <i>No upcoming event</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="profile.html"
+          ><img
+            class="ui avatar image"
+            src="img/3.png"
+            style="border: 2px solid #ffffff; height: 48px; width: 48px"
+        /></a>
+        |
+        <a href="premium.html">
+          <code
+            class="privilege"
+            style="
+              background-color: inherit;
+              border: 1px solid #d79a10;
+              color: #d79a10;
+            "
+            >Move to Premium <i class="icon ion-md-medal"></i></code
+        ></a>
+      </div>
+    </div>
+    <br />
+    <div class="ui container">
+      <section class="ui stackable three column grid">
+        <!----------------------------Left side timeline section------------------------------->
+        <div class="ui three wide sticky column">
+          <div
+            class="ui center aligned icon header"
+            style="
+              height: auto;
+              border: 1px solid inherit;
+              border-radius: 10px;
+              background-color: rgb(236, 236, 236, 0.2);
+              margin-top: 20px;
+              padding: 5px;
+            "
+          >
+            <a href="#"
+              ><img
+                src="img/3.png"
+                class="ui avatar image"
+                style="
+                  width: 48px;
+                  height: 48px;
+                  border: 2px solid #ffffff;
+                  position: relative;
+                  bottom: 45px;
+                  margin-top: 20px;
+                  margin-bottom: -20px;
+                "
+            /></a>
+            <br /><span style="font-size: 16px" class="nameDisplay"></span
+            ><br />
+            <span style="font-weight: lighter; font-size: 14px"
+              >Entrepreneur</span
+            >
+          </div>
+          <div
+            class="ui list"
+            style="
+              border: 1px solid inherit;
+              background-color: rgb(236, 236, 236, 0.2);
+              border-radius: 10px;
+              padding: 10px;
+            "
+          >
+            <a class="item" href="profile.html">
+              <i class="icon ion-md-person"></i>
+              <div class="content">
+                <div class="header">Profile</div>
+                <div class="description">My profile</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="post.html">
+              <i class="icon ion-md-create"></i>
+              <div class="content">
+                <div class="header">Products</div>
+                <div class="description">My Products</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="forum.html">
+              <i class="icon ion-md-school"></i>
+              <div class="content">
+                <div class="header">Forums</div>
+                <div class="description">Forums</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="meeting.html">
+              <i class="icon ion-md-tv"></i>
+              <div class="content">
+                <div class="header">Meeting</div>
+                <div class="description">Partner encounter</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="message.html">
+              <i class="icon ion-md-mail"></i>
+              <div class="content">
+                <div class="header">Message</div>
+                <div class="description">Send a straight message</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item" href="help.html">
+              <i class="help icon"></i>
+              <div class="content">
+                <div class="header">Ask for Help</div>
+              </div>
+            </a>
+          </div>
+          <!--Statistics-->
+          <div class="ui container">
+            <h2 class="ui horizontal divider" style="text-transform: lowercase">
+              Statistics
+            </h2>
+          </div>
+          <div
+            class="ui list"
+            style="
+              border: 1px solid inherit;
+              background-color: rgb(236, 236, 236, 0.2);
+              border-radius: 10px;
+              padding: 10px;
+            "
+          >
+            <a class="item">
+              <i class="icon ion-md-people"></i>
+              <div class="content">
+                <div class="header">Netwok</div>
+                <div class="description">My connections</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item">
+              <i class="icon ion-md-construct"></i>
+              <div class="content">
+                <div class="header">Projects</div>
+                <div class="description">Voted project</div>
+              </div>
+            </a>
+            <div class="ui divider container"></div>
+            <a class="item">
+              <i class="icon ion-md-person"></i>
+              <div class="content">
+                <div class="header">Interactions</div>
+                <div class="description">Profile views</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!----------------------------All usesr's posts-------------------------------------->
+        <div class="thirteen wide column">
+          <div class="ui container">
+            <div class="">
+              <h4>Partner meeting</h4>
+              <div class="ui divider"></div>
+              <br />
+              <p style="font-size: 35px; font-weight: 100">
+                Collaborate in a meeting makes business more reliable and
+                pratical!
+              </p>
+              <div class="">
+                <button
+                  id="new-meeting"
+                  class="ui huge button"
+                  style="font-weight: lighte"
+                >
+                  <span>Schedule a new meeting</span>
+                </button>
+              </div>
+              <div class="ui container">
+                <h2
+                  class="ui horizontal divider"
+                  style="text-transform: initial"
+                >
+                  Ongoin meetings
+                </h2>
+              </div>
+            </div>
+            <br />
+            <!--Starting posts-->
+            <div class="ui three column grid">
+              <div class="column">
+                <div class="layout">
+                  <div class="meet title">
+                    <h4>Starts on 10<sup>th</sup> May 22, 8h:00 PM</h4>
+                  </div>
+                  <br />
+                  <div class="meet content">
+                    <ul class="ui list">
+                      <div clas="item">
+                        <b
+                          ><i class="icon ion-md-paper" style="color: green"></i
+                          >Theme :</b
+                        >
+                        Reorganize EntreHub
+                      </div>
+                      <div>
+                        <b
+                          ><i
+                            class="icon ion-md-person"
+                            style="color: rgb(62, 171, 244)"
+                          ></i
+                          >Speaker :</b
+                        >
+                        Gill Gates
+                      </div>
+                      <div>
+                        <b
+                          ><i
+                            class="icon ion-md-hourglass"
+                            style="color: orange"
+                          ></i
+                          >Duration :</b
+                        >
+                        2h
+                      </div>
+                      <div>
+                        <b
+                          ><i
+                            class="icon ion-md-square"
+                            style="color: rgb(126, 4, 4)"
+                          ></i
+                          >Ends :</b
+                        >
+                        10:00 PM
+                      </div>
+                    </ul>
+                    <div class="meet btn">
+                      <button class="ui fluid small button">
+                        Meet partners
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ui divider"></div>
+                  <div class="meet subscribed">
+                    <p>These partners have already joined it</p>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/1.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/2.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/3.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/7.png" alt=""
+                    /></a>
+                    <a href="#">more +</a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="layout">
+                  <div class="meet title">
+                    <h4>Starts on 03<sup>st</sup> Dec 22, 8h:00 PM</h4>
+                  </div>
+                  <br />
+                  <div class="meet content">
+                    <ul class="ui list">
+                      <div class="item">
+                        <b
+                          ><i class="icon ion-md-paper" style="color: green"></i
+                          >Theme :</b
+                        >
+                        Impact in business
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-person"
+                            style="color: rgb(62, 171, 244)"
+                          ></i
+                          >Speaker :</b
+                        >
+                        Marthe Simba
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-hourglass"
+                            style="color: orange"
+                          ></i
+                          >Duration :</b
+                        >
+                        2h
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-square"
+                            style="color: rgb(126, 4, 4)"
+                          ></i
+                          >Ends :</b
+                        >
+                        10:00 PM
+                      </div>
+                    </ul>
+                    <div class="meet btn">
+                      <button class="ui fluid small button">
+                        Meet partners
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ui divider"></div>
+                  <div class="meet subscribed">
+                    <p>These partners have already joined it</p>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/1.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/2.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/3.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/7.png" alt=""
+                    /></a>
+                    <a href="#">more +</a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="layout">
+                  <div class="meet title">
+                    <h4 style="font-weight: bolder">
+                      Starts on 21<sup>st</sup> Aug 22, 8:00 PM
+                    </h4>
+                  </div>
+                  <br />
+                  <div class="meet content">
+                    <ul class="ui list">
+                      <div class="item">
+                        <b
+                          ><i class="icon ion-md-paper" style="color: green"></i
+                          >Theme :</b
+                        >
+                        Invest in Africa
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-person"
+                            style="color: rgb(62, 171, 244)"
+                          ></i
+                          >Speaker :</b
+                        >
+                        Jules Brown
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-hourglass"
+                            style="color: orange"
+                          ></i
+                          >Duration :</b
+                        >
+                        2h
+                      </div>
+                      <div class="item">
+                        <b
+                          ><i
+                            class="icon ion-md-square"
+                            style="color: rgb(126, 4, 4)"
+                          ></i
+                          >Ends :</b
+                        >
+                        10:00 PM
+                      </div>
+                    </ul>
+                    <div class="meet btn">
+                      <button class="ui fluid small button">
+                        Meet partners
+                      </button>
+                    </div>
+                  </div>
+                  <div class="ui divider"></div>
+                  <div class="meet subscribed">
+                    <p>These partners have already joined it</p>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/1.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/2.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/3.png" alt=""
+                    /></a>
+                    <a href="#"
+                      ><img class="ui avatar image" src="img/7.png" alt=""
+                    /></a>
+                    <a href="#">more +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
